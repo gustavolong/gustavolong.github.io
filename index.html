@@ -49,12 +49,12 @@
       color: #0077cc;
       font-weight: bold;
     }
-    .cv-section {
-      max-width: 700px;
-      margin: 0 auto;
-      text-align: left;
-      padding-top: 2em;
-    }
+   .cv-section {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: justify;
+  padding-top: 2em;
+}
     .cv-section h2 {
       border-bottom: 1px solid #ccc;
       padding-bottom: 0.3em;
@@ -133,6 +133,20 @@ Saint-Denis, France.</li>
       
       <li>Analyse du mouvement</li>
     </ul>
+    <h2>Contact</h2>
+<form action="https://formspree.io/f/xvgrkpqr" method="POST">
+  <label for="name">Nom :</label><br>
+  <input type="text" name="name" id="name" required><br><br>
+
+  <label for="email">Adresse e-mail :</label><br>
+  <input type="email" name="email" id="email" required><br><br>
+
+  <label for="message">Message :</label><br>
+  <textarea name="message" id="message" rows="5" required></textarea><br><br>
+
+  <button type="submit">Envoyer</button>
+</form>
+
   </div>
 </body>
 </html>
