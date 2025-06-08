@@ -69,6 +69,30 @@
   <img src="profile.jpg" alt="Gustavo Long">
   <h1>Gustavo Long</h1>
   <p>professeur de ballet</p>
+  <h2>Cours ouverts au public – dès août 2025</h2>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5em; max-width: 800px; margin: 2em auto; text-align: left;">
+  <div style="background: #fff; padding: 1em; border: 1px solid #ccc; border-radius: 8px; box-shadow: 2px 2px 8px rgba(0,0,0,0.05);">
+    <strong>Initiation à la danse (adultes)</strong><br>
+    <span>UQAM – mercredi 16h à 17h30</span><br>
+    <em>Inscription : Centre sportif UQAM</em>
+  </div>
+  <div style="background: #fff; padding: 1em; border: 1px solid #ccc; border-radius: 8px; box-shadow: 2px 2px 8px rgba(0,0,0,0.05);">
+    <strong>Ballet niveau intermédiaire</strong><br>
+    <span>UQAM – vendredi 12h à 13h30</span><br>
+    <em>Inscription : Centre sportif UQAM</em>
+  </div>
+  <div style="background: #fff; padding: 1em; border: 1px solid #ccc; border-radius: 8px; box-shadow: 2px 2px 8px rgba(0,0,0,0.05);">
+    <strong>Atelier corps et mouvement</strong><br>
+    <span>École de danse XYZ – lundi 18h à 19h30</span><br>
+    <em>Inscription : directement auprès de l’école</em>
+  </div>
+  <div style="background: #fff; padding: 1em; border: 1px solid #ccc; border-radius: 8px; box-shadow: 2px 2px 8px rgba(0,0,0,0.05);">
+    <strong>Ballet doux (60+)</strong><br>
+    <span>Maison de la culture – jeudi 10h à 11h15</span><br>
+    <em>Inscription : au comptoir ou par téléphone</em>
+  </div>
+</div>
+
   <div class="cv-section">
     <h2>Formation</h2>
     <ul>
@@ -174,6 +198,36 @@ Saint-Denis, France.</li>
 
 </form>
 
+<h2>Contact</h2>
+<form action="https://formspree.io/f/xvgrkpqr" method="POST" style="margin-top: 2em;">
+  <div style="margin-bottom: 1em; text-align: left;">
+    <label for="name">Nom :</label><br>
+    <input type="text" name="name" id="name" required style="width: 100%; padding: 0.5em;">
+  </div>
+
+  <div style="margin-bottom: 1em; text-align: left;">
+    <label for="email">Adresse e-mail :</label><br>
+    <input type="email" name="email" id="email" required style="width: 100%; padding: 0.5em;">
+  </div>
+
+  <div style="margin-bottom: 1em; text-align: left;">
+    <label for="message">Message :</label><br>
+    <textarea name="message" id="message" rows="6" required style="width: 100%; padding: 0.5em;"></textarea>
+  </div>
+
+  <button type="submit" style="
+    padding: 0.6em 1.8em;
+    background-color: #444;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-family: serif;
+    font-size: 1em;
+    cursor: pointer;
+  ">
+    Envoyer
+  </button>
+</form>
 
   </div>
 </body>
