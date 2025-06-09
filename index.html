@@ -124,19 +124,36 @@ body {
 .bio-section {
   max-width: 800px;
   margin: 3em auto;
+  padding: 0; /* quitar padding */
   font-size: 1em;
   line-height: 1.6;
   text-align: justify;
   color: #333;
-}
-.bio-section p {
-  margin-bottom: 1em;
 }
 
 h1, h2, h3 {
   letter-spacing: -0.015em;
   margin-bottom: 0.2em;
 }
+  .course-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5em;
+  max-width: 800px;
+  margin: 2em auto;
+  text-align: left;
+}
+
+.course-card {
+  background: #ddd;
+  color: #222;
+  padding: 1em;
+  border-radius: 10px;
+  box-shadow: 1px 1px 6px rgba(0,0,0,0.05);
+  font-size: 0.95em;
+  line-height: 1.5;
+}
+
 </style>
 
 </head>
@@ -157,32 +174,32 @@ h1, h2, h3 {
   Cours ouverts au public – Automne 2025
 </h3>
 
+<div class="course-grid">
 
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5em; max-width: 800px; margin: 2em auto; text-align: left;">
-  
-  <div style="background: #ddd; color: #222; padding: 1em 1.2em; border-radius: 10px; box-shadow: 1px 1px 6px rgba(0,0,0,0.05); font-size: 0.95em; line-height: 1.5;">
+  <div class="course-card">
     <strong>Initiation à la danse (adultes)</strong><br>
     <span>UQAM – mercredi 16h à 17h30</span><br>
     <em>Inscription : Centre sportif UQAM</em>
   </div>
 
-  <div style="background: #ddd; color: #222; padding: 1em 1.2em; border-radius: 10px; box-shadow: 1px 1px 6px rgba(0,0,0,0.05); font-size: 0.95em; line-height: 1.5;">
+  <div class="course-card">
     <strong>Ballet intermédiaire (adultes)</strong><br>
     <span>UQAM – mercredi 17h30 à 19h00</span><br>
     <em>Inscription : Centre sportif UQAM</em>
   </div>
 
-  <div style="background: #ddd; color: #222; padding: 1em 1.2em; border-radius: 10px; box-shadow: 1px 1px 6px rgba(0,0,0,0.05); font-size: 0.95em; line-height: 1.5;">
+  <div class="course-card">
     <strong>Ballet 9–12 ans</strong><br>
     <span>Centre culturel Georges-Vanier – mardi 17h45 à 18h45</span><br>
     <em>Inscription : directement auprès du Centre culturel</em>
   </div>
 
-  <div style="background: #ddd; color: #222; padding: 1em 1.2em; border-radius: 10px; box-shadow: 1px 1px 6px rgba(0,0,0,0.05); font-size: 0.95em; line-height: 1.5;">
+  <div class="course-card">
     <strong>Ballet adulte</strong><br>
     <span>Centre culturel Georges-Vanier – mardi 19h à 20h15</span><br>
     <em>Inscription : directement auprès du Centre culturel</em>
   </div>
+
 
 </div>
 
@@ -190,7 +207,7 @@ h1, h2, h3 {
  <div class="bio-section">
    <h2>Bio</h2>
    
-<div style="padding: 1em; font-family: 'Times New Roman', Times, serif; font-size: 14px; line-height: 1.6; color: #000;">
+<div style="font-family: 'Times New Roman', Times, serif; font-size: 14px; line-height: 1.6; color: #000;">
   <p>Danseur, chercheur et enseignant en danse classique, il est titulaire d’un D.E.C. en danse-interprétation ainsi que d’un 
     baccalauréat (<em>Licenciado</em>) en composition chorégraphique de l’Institut Universitaire National de l’Art (IUNA) en Argentine. 
     Il y termine son cursus avec un projet de fin d’études intitulé : <em>« Le rôle du chorégraphe aujourd’hui »</em>, sous la direction de Jorge Del Vitto et Cristina Urrutia 
