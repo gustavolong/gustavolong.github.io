@@ -2,96 +2,127 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Site personnel de Gustavo Long, professeur de ballet et chercheur en danse.">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="Site personnel de Gustavo Long, professeur de ballet et chercheur en danse. Cours, bio, contact.">
   <meta name="robots" content="index, follow">
   <title>Gustavo Long</title>
   <link rel="canonical" href="https://gustavolong.com/">
-  <script src="https://cdn.counter.dev/script.js" data-id="fda67007-2c7e-4d8d-8a5f-29d284019551" data-utcoffset="-4"></script>
-  <style>
-    /* Estilos generales (omitidos para brevedad, usar los del usuario) */
-    body { font-family: 'Segoe UI', 'Georgia', serif; background-color: #f5f7fa; color: #1f1f1f; margin: 0; }
-    .container { max-width: 960px; margin: 0 auto; padding: 2rem 1rem; }
-    .profile-box { background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 10px 25px rgba(0,0,0,0.06); text-align: center; margin-bottom: 2.5rem; }
-    .profile-box img { width: 220px; height: 220px; border-radius: 50%; object-fit: cover; margin-bottom: 1rem; }
-    h1 { font-size: 2.4rem; margin: 0.3rem 0; }
-    .tabs { display: flex; justify-content: center; margin-bottom: 1rem; flex-wrap: wrap; gap: 1rem; }
-    .tab-link { background-color: #eef1fb; padding: 0.7rem 1.2rem; border-radius: 8px; cursor: pointer; text-decoration: none; color: #333; font-weight: 600; transition: background-color 0.2s; }
-    .tab-link:hover, .tab-link.active { background-color: #5c67f2; color: white; }
-    .tab-content { display: none; background: white; border-radius: 12px; padding: 2rem; box-shadow: 0 5px 15px rgba(0,0,0,0.06); }
-    .tab-content.active { display: block; }
-    form input, form textarea { width: 100%; padding: 0.6rem; border: 1px solid #dcdfe6; border-radius: 12px; margin-top: 0.3rem; }
-    button { background: #5c67f2; color: white; border: none; padding: 0.75rem 2rem; border-radius: 12px; cursor: pointer; font-size: 1rem; }
-  </style>
+
+  <!-- STYLES -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="css/tooplate-ben-resume-style.css">
 </head>
-<body>
-  <div class="container">
-    <div class="profile-box">
-      <img src="profile.jpg" alt="Gustavo Long">
-      <h1>Gustavo Long</h1>
-      <p style="font-size: 1.4rem; font-weight: 500;">Professeur de ballet</p>
+
+<body data-spy="scroll" data-target="#navbarNav" data-offset="50">
+
+  <!-- MENU BAR -->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand" href="#intro">Gustavo Long</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item"><a href="#intro" class="nav-link smoothScroll">Accueil</a></li>
+          <li class="nav-item"><a href="#cours" class="nav-link smoothScroll">Cours</a></li>
+          <li class="nav-item"><a href="#bio" class="nav-link smoothScroll">Bio</a></li>
+          <li class="nav-item"><a href="#domaines" class="nav-link smoothScroll">Spécialisation</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link smoothScroll">Contact</a></li>
+        </ul>
+      </div>
     </div>
+  </nav>
 
-    <nav class="tabs">
-      <a class="tab-link active" onclick="showTab('cours')">Cours</a>
-      <a class="tab-link" onclick="showTab('bio')">Bio</a>
-      <a class="tab-link" onclick="showTab('domaines')">Spécialisations</a>
-      <a class="tab-link" onclick="showTab('contact')">Contact</a>
-    </nav>
-
-    <div id="cours" class="tab-content active">
-      <h2>Cours ouverts au public – Automne 2025</h2>
-      <ul>
-        <li><strong>Initiation à la danse (adultes)</strong> – UQAM, mercredi 16h à 17h30</li>
-        <li><strong>Ballet intermédiaire (adultes)</strong> – UQAM, mercredi 17h30 à 19h</li>
-        <li><strong>Ballet 9–12 ans</strong> – Centre culturel Georges-Vanier, mardi 17h45 à 18h45</li>
-        <li><strong>Ballet adulte</strong> – Centre culturel Georges-Vanier, mardi 19h à 20h15</li>
-      </ul>
+  <!-- HERO -->
+  <section class="hero d-flex flex-column justify-content-center align-items-center" id="intro">
+    <div class="container">
+      <div class="row">
+        <div class="mx-auto col-lg-5 col-md-5 col-10">
+          <img src="images/profile.jpg" class="img-fluid rounded-circle" alt="Gustavo Long">
+        </div>
+        <div class="col-lg-7 col-md-7 col-12 d-flex flex-column justify-content-center">
+          <div class="hero-text">
+            <h1 class="hero-title">Professeur de ballet</h1>
+            <p class="email-link">contact@gustavolong.com</p>
+          </div>
+        </div>
+      </div>
     </div>
+  </section>
 
-    <div id="bio" class="tab-content">
-      <h2>Bio</h2>
-      <p style="text-align: justify;">Danseur, chercheur et enseignant en danse classique [...]. Membre professionnel du <a href="https://www.quebecdanse.org/repertoire/long-gustavo-guillermo/" target="_blank">Regroupement québécois de la danse</a>.</p>
+  <!-- COURS -->
+  <section class="about section-padding" id="cours">
+    <div class="container">
+      <h3 class="mb-5 text-center">Cours ouverts au public – Automne 2025</h3>
+      <div class="row">
+        <div class="col-md-6 mb-4"><div class="course-card"><strong>Initiation à la danse (adultes)</strong><br>UQAM – mercredi 16h à 17h30<br><em>Inscription : Centre sportif UQAM</em></div></div>
+        <div class="col-md-6 mb-4"><div class="course-card"><strong>Ballet intermédiaire (adultes)</strong><br>UQAM – mercredi 17h30 à 19h00<br><em>Inscription : Centre sportif UQAM</em></div></div>
+        <div class="col-md-6 mb-4"><div class="course-card"><strong>Ballet 9–12 ans</strong><br>CC Georges-Vanier – mardi 17h45 à 18h45<br><em>Inscription : Centre culturel</em></div></div>
+        <div class="col-md-6 mb-4"><div class="course-card"><strong>Ballet adulte</strong><br>CC Georges-Vanier – mardi 19h à 20h15<br><em>Inscription : Centre culturel</em></div></div>
+      </div>
     </div>
+  </section>
 
-    <div id="domaines" class="tab-content">
-      <h2>Domaines de spécialisation</h2>
+  <!-- BIO -->
+  <section class="about section-padding" id="bio">
+    <div class="container">
+      <h3 class="mb-5">Bio</h3>
+      <p>Danseur, chercheur et enseignant en danse classique, il est titulaire [...] <a href="https://www.quebecdanse.org/repertoire/long-gustavo-guillermo/" target="_blank">Regroupement québécois de la danse</a>.</p>
+    </div>
+  </section>
+
+  <!-- DOMAINES -->
+  <section class="about section-padding" id="domaines">
+    <div class="container">
+      <h3 class="mb-5">Domaines de spécialisation</h3>
       <ul>
         <li>Didactique de la danse</li>
         <li>Histoire de la danse</li>
         <li>Technique de la danse classique</li>
         <li>Notation du mouvement</li>
-        <li>Transmission du répertoire</li>
+        <li>Transmission du répertoire et culture chorégraphique</li>
         <li>Analyse du mouvement</li>
       </ul>
     </div>
+  </section>
 
-    <div id="contact" class="tab-content">
-      <h2>Contact</h2>
-      <form action="https://formspree.io/f/xvgrkpqr" method="POST">
-        <label for="name">Nom :</label>
-        <input type="text" id="name" name="name" required>
-
-        <label for="email">Adresse e-mail :</label>
-        <input type="email" id="email" name="email" required>
-
-        <label for="message">Message :</label>
-        <textarea id="message" name="message" rows="5" required></textarea>
-
-        <div style="text-align: right;">
-          <button type="submit">Envoyer</button>
+  <!-- CONTACT -->
+  <section class="contact section-padding" id="contact">
+    <div class="container">
+      <h3 class="mb-5">Contact</h3>
+      <div class="row">
+        <div class="col-md-6">
+          <form action="https://formspree.io/f/xvgrkpqr" method="POST">
+            <div class="form-group">
+              <input type="text" class="form-control" name="name" placeholder="Nom" required>
+            </div>
+            <div class="form-group">
+              <input type="email" class="form-control" name="email" placeholder="Email" required>
+            </div>
+            <div class="form-group">
+              <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Envoyer</button>
+          </form>
         </div>
-      </form>
+        <div class="col-md-6">
+          <p><strong>Email :</strong> contact@gustavolong.com</p>
+          <p><strong>Instagram :</strong> <a href="https://www.instagram.com/gustavolong/" target="_blank">@gustavolong</a></p>
+          <p><strong>LinkedIn :</strong> <a href="https://www.linkedin.com/in/gustavolong/" target="_blank">Gustavo Long</a></p>
+        </div>
+      </div>
     </div>
-  </div>
+  </section>
 
-  <script>
-    function showTab(id) {
-      document.querySelectorAll('.tab-link').forEach(link => link.classList.remove('active'));
-      document.querySelectorAll('.tab-content').forEach(tab => tab.classList.remove('active'));
-      document.getElementById(id).classList.add('active');
-      event.target.classList.add('active');
-    }
-  </script>
+  <!-- SCRIPTS -->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/smoothscroll.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/custom.js"></script>
 </body>
 </html>
