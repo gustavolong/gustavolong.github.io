@@ -11,25 +11,41 @@
 
   <style>
     :root {
-      --fond: #f8f8f8;
-      --texte: #333;
-      --accent: #0077cc;
-      --clair: #fff;
-      --gris: #ccc;
+      --background: #f5f7fa;
+      --foreground: #ffffff;
+      --text: #2e2e2e;
+      --accent: #4169e1;
+      --accent-hover: #2f54c4;
+      --border: #e0e0e0;
+      --shadow: rgba(0, 0, 0, 0.08);
     }
 
     body {
-      font-family: 'Times New Roman', serif;
-      font-size: 1em;
-      line-height: 1.5;
-      background-color: var(--fond);
-      color: var(--texte);
+      font-family: 'Georgia', 'Times New Roman', serif;
+      font-size: 1rem;
+      line-height: 1.6;
+      background-color: var(--background);
+      color: var(--text);
       margin: 0;
-      padding: 2em;
-      text-align: center;
+      padding: 0;
     }
 
-    img {
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 2em;
+    }
+
+    .profile-box {
+      background: var(--foreground);
+      padding: 2em;
+      border-radius: 16px;
+      box-shadow: 0 8px 16px var(--shadow);
+      text-align: center;
+      margin-bottom: 2em;
+    }
+
+    .profile-box img {
       width: 180px;
       height: 180px;
       border-radius: 50%;
@@ -37,198 +53,162 @@
       margin-bottom: 1em;
     }
 
-    h1, h2, h3 {
-      letter-spacing: -0.015em;
-      margin-bottom: 0.2em;
-    }
-
     h1 {
-      font-size: 2em;
-      color: #000;
-    }
-
-    p {
-      font-size: 1.2em;
-      color: #555;
-      margin-top: 0;
-    }
-
-    a {
-      text-decoration: none;
-      color: var(--accent);
-      font-weight: bold;
-      transition: color 0.2s ease;
-    }
-
-    a:hover {
-      color: #005fa3;
-    }
-
-    .profile-box {
-      background-color: var(--clair);
-      border-radius: 10px;
-      box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
-      max-width: 770px;
-      margin: 2em auto;
-      padding: 1em;
-    }
-
-    .social-links {
-      margin-top: 1em;
-      font-size: 1.1em;
+      font-size: 2.2em;
+      margin: 0.2em 0;
     }
 
     .social-links a {
-      color: #444;
       margin: 0 0.5em;
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .social-links a:hover {
+      color: var(--accent-hover);
+    }
+
+    .section {
+      background: var(--foreground);
+      border-radius: 16px;
+      padding: 2em;
+      box-shadow: 0 4px 12px var(--shadow);
+      margin-bottom: 2em;
+    }
+
+    .section h2 {
+      border-bottom: 2px solid var(--border);
+      padding-bottom: 0.3em;
+      margin-bottom: 1em;
     }
 
     .course-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 1.5em;
-      max-width: 800px;
-      margin: 2em auto;
-      text-align: left;
+      gap: 1em;
     }
 
     .course-card {
-      background: #ddd;
-      color: #222;
+      background: #edf2fb;
       padding: 1em;
-      border-radius: 10px;
-      box-shadow: 1px 1px 6px rgba(0,0,0,0.05);
+      border-radius: 12px;
+      box-shadow: 0 2px 6px var(--shadow);
     }
 
-    .bio-section {
-      max-width: 800px;
-      margin: 3em auto;
-      text-align: justify;
-      font-size: 1em;
-      line-height: 1.4;
-    }
-
-    .cv-section {
-      max-width: 800px;
-      margin: 0 auto;
-      text-align: justify;
-      padding-top: 2em;
-    }
-
-    .cv-section h2 {
-      border-bottom: 1px solid var(--gris);
-      padding-bottom: 0.3em;
-    }
-
-    .cv-section ul {
-      list-style: disc;
+    ul {
       padding-left: 1.2em;
     }
 
-    .cv-section ul li {
-      margin: 0.5em 0;
-    }
-
-    form {
-      text-align: left;
-      max-width: 800px;
-      margin: 2em auto;
+    form label {
+      font-weight: bold;
     }
 
     input, textarea {
       width: 100%;
       padding: 0.5em;
+      margin-top: 0.3em;
       margin-bottom: 1em;
-      border: 1px solid #ccc;
-      border-radius: 4px;
+      border: 1px solid var(--border);
+      border-radius: 6px;
       font-family: serif;
     }
 
     button {
-      padding: 0.6em 1.8em;
-      background-color: #444;
+      background-color: var(--accent);
       color: white;
       border: none;
-      border-radius: 5px;
-      font-family: serif;
-      font-size: 1em;
+      padding: 0.6em 1.5em;
+      border-radius: 6px;
       cursor: pointer;
+      font-size: 1em;
+    }
+
+    button:hover {
+      background-color: var(--accent-hover);
     }
   </style>
 </head>
 <body>
+  <div class="container">
+    <div class="profile-box">
+      <img src="profile.jpg" alt="Gustavo Long">
+      <h1>Gustavo Long</h1>
+      <p>Professeur de ballet</p>
+      <div class="social-links">
+        <a href="https://www.instagram.com/gustavolong/" target="_blank">Instagram</a>
+        <a href="https://www.linkedin.com/in/gustavolong/" target="_blank">LinkedIn</a>
+        <a href="https://paris8.academia.edu/GustavoLong" target="_blank">Academia</a>
+      </div>
+    </div>
 
-<div class="profile-box">
-  <img src="profile.jpg" alt="Gustavo Long">
-  <h1>Gustavo Long</h1>
-  <p>professeur de ballet</p>
-  <div class="social-links">
-    <a href="https://www.instagram.com/gustavolong/" target="_blank" aria-label="Instagram">Instagram</a> |
-    <a href="https://www.linkedin.com/in/gustavolong/" target="_blank" aria-label="LinkedIn">LinkedIn</a> |
-    <a href="https://paris8.academia.edu/GustavoLong" target="_blank" aria-label="Academia">Academia</a>
+    <div class="section">
+      <h2>Cours ouverts au public – Automne 2025</h2>
+      <div class="course-grid">
+        <div class="course-card">
+          <strong>Initiation à la danse (adultes)</strong><br>
+          UQAM – mercredi 16h à 17h30<br>
+          <em>Inscription : Centre sportif UQAM</em>
+        </div>
+        <div class="course-card">
+          <strong>Ballet intermédiaire (adultes)</strong><br>
+          UQAM – mercredi 17h30 à 19h00<br>
+          <em>Inscription : Centre sportif UQAM</em>
+        </div>
+        <div class="course-card">
+          <strong>Ballet 9–12 ans</strong><br>
+          Centre culturel Georges-Vanier – mardi 17h45 à 18h45<br>
+          <em>Inscription : directement auprès du Centre culturel</em>
+        </div>
+        <div class="course-card">
+          <strong>Ballet adulte</strong><br>
+          Centre culturel Georges-Vanier – mardi 19h à 20h15<br>
+          <em>Inscription : directement auprès du Centre culturel</em>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Bio</h2>
+      <p>Danseur, chercheur et enseignant en danse classique, il est titulaire d’un D.E.C. en danse-interprétation ainsi que d’un baccalauréat (<em>Licenciado</em>) en composition chorégraphique de l’Institut Universitaire National de l’Art (IUNA) en Argentine. Il y termine son cursus avec un projet de fin d’études intitulé : <em>« Le rôle du chorégraphe aujourd’hui »</em>, sous la direction de Jorge Del Vitto et Cristina Urrutia (<a href="https://movimiento.una.edu.ar/assets/files/file/artes-del-movimiento/2016/2016-am-una-registro-tesis-20160914.pdf" target="_blank">Lien ici</a>).</p>
+      <p>Il est également titulaire d’un baccalauréat (<em>Profesor</em>) en composition chorégraphique de l’Université du Salvador (Argentine).</p>
+      <p>Il poursuit ensuite son parcours académique au département danse de l’Université Paris 8, où il obtient un baccalauréat (Licence), puis une maîtrise (Master) en danse, avec un mémoire intitulé : <em>« Le fantôme du chorégraphe dans deux versions du Spectre de la rose »</em>, sous la direction de Christine Roquet (<a href="https://www.danse.univ-paris8.fr/diplome.php?di_id=2" target="_blank">Lien ici</a>).</p>
+      <p>En 2020, il complète un diplôme de premier cycle en notation du mouvement Benesh au Conservatoire National Supérieur de Musique et de Danse de Paris (CNSMDP). Entre 2020 et 2022, il suit également une formation en « Mémoire et archives de la scène » à l’Université Sorbonne Nouvelle.</p>
+      <p>En 2021, il reçoit la dispense du Diplôme d’État de professeur de danse, une reconnaissance officielle de son expérience confirmée dans l’enseignement de la danse classique, délivrée par le Ministère de la Culture de France (<a href="https://www.culture.gouv.fr/espace-documentation/bulletin-officiel/Bulletin-officiel-n-320-novembre-2021" target="_blank">Bulletin officiel n° 320</a>).</p>
+      <p>Il collabore avec de nombreuses institutions : l’Université Nationale des Arts (UNA) en Argentine, les conservatoires de la Ville de Paris, le Conservatoire Gabriel Fauré, le Centre National de la Danse, l’Opéra National de Paris, ainsi que l’UQAM et l’ESBQ au Québec.</p>
+      <p>En tant qu’interprète, chorégraphe ou assistant, il a participé à plusieurs projets et compagnies, notamment <em>Solos con la Danza</em> (2016), Battery Dance Company (2015), Compañía de Danza Paralela (2006–2010), <em>Project Buenos Aires</em> (2009), <em>The Show Must Go On</em> de Jérôme Bel (2008), Ballet à Terre (2008), Cuentos de Ballet (2006–2008) et <em>Cabaret Mojado</em> (2005).</p>
+      <p>Actuellement, il poursuit ses études à l’UQAM. Il est aussi <em>Registered Benesh Notator</em> auprès de Benesh International (Royal Academy of Dance) et membre professionnel du <a href="https://www.quebecdanse.org/repertoire/long-gustavo-guillermo/" target="_blank">Regroupement québécois de la danse</a>.</p>
+    </div>
+
+    <div class="section">
+      <h2>Domaines de spécialisation</h2>
+      <ul>
+        <li>Didactique de la danse</li>
+        <li>Histoire de la danse</li>
+        <li>Technique de la danse classique</li>
+        <li>Notation du mouvement</li>
+        <li>Transmission du répertoire et culture chorégraphique</li>
+        <li>Analyse du mouvement</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Contact</h2>
+      <form action="https://formspree.io/f/xvgrkpqr" method="POST">
+        <label for="name">Nom :</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Adresse e-mail :</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message :</label>
+        <textarea id="message" name="message" rows="6" required></textarea>
+
+        <div style="text-align: right;">
+          <button type="submit">Envoyer</button>
+        </div>
+      </form>
+    </div>
   </div>
-</div>
-
-<h3 style="text-transform: uppercase; letter-spacing: 0.05em; font-weight: bold; font-size: 1.1em; color: #444; margin-bottom: 1em;">
-  Cours ouverts au public – Automne 2025
-</h3>
-
-<div class="course-grid">
-  <div class="course-card">
-    <strong>Initiation à la danse (adultes)</strong><br>
-    <span>UQAM – mercredi 16h à 17h30</span><br>
-    <em>Inscription : Centre sportif UQAM</em>
-  </div>
-  <div class="course-card">
-    <strong>Ballet intermédiaire (adultes)</strong><br>
-    <span>UQAM – mercredi 17h30 à 19h00</span><br>
-    <em>Inscription : Centre sportif UQAM</em>
-  </div>
-  <div class="course-card">
-    <strong>Ballet 9–12 ans</strong><br>
-    <span>Centre culturel Georges-Vanier – mardi 17h45 à 18h45</span><br>
-    <em>Inscription : directement auprès du Centre culturel</em>
-  </div>
-  <div class="course-card">
-    <strong>Ballet adulte</strong><br>
-    <span>Centre culturel Georges-Vanier – mardi 19h à 20h15</span><br>
-    <em>Inscription : directement auprès du Centre culturel</em>
-  </div>
-</div>
-
-<div class="bio-section">
-  <h2>Bio</h2>
-  <p>Danseur, chercheur et enseignant en danse classique, il est titulaire d’un D.E.C. en danse-interprétation ainsi que d’un baccalauréat (<em>Licenciado</em>) en composition chorégraphique de l’Institut Universitaire National de l’Art (IUNA) en Argentine. [...]</p>
-  <!-- (Resto de la biographie, idéntico a tu texto original. Lo he acortado aquí solo por espacio) -->
-</div>
-
-<div class="cv-section">
-  <h2>Domaines de spécialisation</h2>
-  <ul>
-    <li>Didactique de la danse</li>
-    <li>Histoire de la danse</li>
-    <li>Technique de la danse classique</li>
-    <li>Notation du mouvement</li>
-    <li>Transmission du répertoire et culture chorégraphique</li>
-    <li>Analyse du mouvement</li>
-  </ul>
-</div>
-
-<h2>Contact</h2>
-<form action="https://formspree.io/f/xvgrkpqr" method="POST">
-  <label for="name">Nom :</label><br>
-  <input type="text" name="name" id="name" required>
-
-  <label for="email">Adresse e-mail :</label><br>
-  <input type="email" name="email" id="email" required>
-
-  <label for="message">Message :</label><br>
-  <textarea name="message" id="message" rows="6" required></textarea>
-
-  <div style="text-align: right;">
-    <button type="submit">Envoyer</button>
-  </div>
-</form>
-
 </body>
 </html>
