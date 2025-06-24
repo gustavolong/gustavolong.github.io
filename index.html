@@ -93,18 +93,24 @@
       padding-left: 0.5rem;
     }
 
-    .course-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 1rem;
-    }
+   .course-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  grid-auto-rows: minmax(160px, auto);
+}
 
-    .course-card {
-      background: #eef1fb;
-      padding: 1rem;
-      border-radius: var(--rounded);
-      box-shadow: 0 3px 10px var(--shadow);
-    }
+.course-card {
+  background: #eef1fb;
+  padding: 2rem;
+  border-radius: var(--rounded);
+  box-shadow: 0 3px 10px var(--shadow);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 180px;
+}
+
 
     ul {
       padding-left: 1.5rem;
