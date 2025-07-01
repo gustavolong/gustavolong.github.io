@@ -176,6 +176,27 @@ h1, h2, h3, h4, h5, h6 {
     button:hover {
       background-color: var(--accent-hover);
     }
+    /* --- Mejoras tipográficas en móviles --- */
+
+@media (max-width: 600px) {
+  body {
+    letter-spacing: 0;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    letter-spacing: 0.01em;
+  }
+}
+
+/* --- Partición automática de palabras y control de quiebres --- */
+body, p, .bio-section {
+  hyphens: auto;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  overflow-wrap: break-word;
+  word-break: normal;
+}
+
   </style>
   <script>
   if (window.location.hostname === "gustavolong.github.io") {
