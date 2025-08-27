@@ -1,3 +1,4 @@
+
 :root {
   --background: #f8f9fc;
   --foreground: #ffffff;
@@ -63,9 +64,16 @@ nav a:hover {
   color: var(--accent-hover);
 }
 
-.profile {
-  text-align: center;
+.profile-flex {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
   margin-bottom: 3rem;
+  flex-wrap: wrap;
+}
+
+.profile-img-wrapper {
+  flex-shrink: 0;
 }
 
 .profile-img {
@@ -73,8 +81,37 @@ nav a:hover {
   height: 180px;
   border-radius: 50%;
   object-fit: cover;
-  margin-bottom: 1rem;
 }
+
+.profile-text {
+  flex: 1;
+  min-width: 260px;
+}
+
+.profile-text .name {
+  font-size: 2rem;
+  font-family: 'EB Garamond', serif;
+  margin: 0;
+}
+
+.profile-text .subtitle {
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin: 0.5rem 0 1rem;
+}
+
+@media (max-width: 600px) {
+  .profile-flex {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .profile-text {
+    min-width: unset;
+  }
+}
+
 
 .name {
   font-size: 2.2rem;
