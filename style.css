@@ -272,9 +272,13 @@ button:hover {
 
 .profile-info .social-links {
   display: flex;
-  gap: 1rem;
+  flex-direction: row;
+  align-items: center;
+  gap: 1.5rem;
+  margin-top: 1rem;
   flex-wrap: wrap;
 }
+
 
 .profile-info .social-links a {
   color: var(--accent);
