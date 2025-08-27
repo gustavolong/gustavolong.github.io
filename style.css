@@ -230,15 +230,16 @@ button:hover {
 }
 .profile-v2 {
   display: flex;
-  align-items: center;
-  gap: 3rem;
+  align-items: flex-start;
+  gap: 2rem;
+  padding: 1.5rem;
   background-color: var(--foreground);
-  padding: 2rem;
   border-radius: var(--rounded);
   box-shadow: 0 6px 20px var(--shadow);
   margin-bottom: 3rem;
   flex-wrap: wrap;
 }
+
 
 .profile-photo img {
   width: 140px;
