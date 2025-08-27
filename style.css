@@ -315,14 +315,15 @@ button:hover {
 }
 
 .profile-img-centered {
-  width: 140px;
-  height: 140px;
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
   object-fit: cover;
-  border: 3px solid var(--border);
-  box-shadow: 0 2px 8px var(--shadow);
-  margin-bottom: 1.2rem;
+  border: 2px solid var(--border);
+  box-shadow: 0 2px 6px var(--shadow);
+  margin-bottom: 1rem;
 }
+
 
 .profile-centered .name {
   font-size: 2rem;
