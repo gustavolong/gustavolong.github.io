@@ -234,28 +234,6 @@ h3 {
   box-shadow: 0 24px 70px rgba(17,17,17,0.09);
 }
 
-.timeline {
-  border-left: 1px solid var(--gold);
-  padding-left: 32px;
-  display: grid;
-  gap: 32px;
-}
-
-.timeline div {
-  position: relative;
-}
-
-.timeline div::before {
-  content: "";
-  position: absolute;
-  left: -39px;
-  top: 10px;
-  width: 13px;
-  height: 13px;
-  background: var(--gold);
-  border-radius: 50%;
-}
-
 .dark {
   background: var(--black);
   color: var(--white);
@@ -314,15 +292,53 @@ h3 {
   color: rgba(255,255,255,0.72);
 }
 
-.contact-links {
+.contact-form {
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.14);
+  border-radius: 26px;
+  padding: 28px;
   display: grid;
-  gap: 14px;
+  gap: 18px;
 }
 
-.contact-links a {
-  color: #e7d4a7;
-  font-size: 1.15rem;
+.contact-form label {
+  display: grid;
+  gap: 8px;
+  color: rgba(255,255,255,0.82);
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  border: 1px solid rgba(255,255,255,0.18);
+  background: rgba(255,255,255,0.96);
+  color: #111;
+  border-radius: 14px;
+  padding: 14px 16px;
+  font: inherit;
+}
+
+.contact-form textarea {
+  resize: vertical;
+}
+
+.contact-form button {
+  border: 0;
+  border-radius: 999px;
+  padding: 15px 22px;
+  background: #e7d4a7;
+  color: #111;
   font-weight: 800;
+  cursor: pointer;
+  transition: 0.25s ease;
+}
+
+.contact-form button:hover {
+  background: var(--gold);
+  color: #fff;
+  transform: translateY(-2px);
 }
 
 footer {
