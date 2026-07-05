@@ -3,568 +3,218 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Gustavo Long | Professeur de ballet à Montréal</title>
   <meta name="description" content="Gustavo Long — professeur de ballet, chercheur en danse et Registered Benesh Notator basé à Montréal, Québec." />
-  <title>Gustavo Long | Professeur de ballet</title>
 
   <link rel="canonical" href="https://gustavolong.com/" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-  <style>
-    :root {
-      --black: #111111;
-      --white: #ffffff;
-      --cream: #f7f4ef;
-      --gray: #6f6f6f;
-      --line: #ded8cc;
-      --gold: #a8874e;
-    }
-
-    * {
-      box-sizing: border-box;
-    }
-
-    html {
-      scroll-behavior: smooth;
-    }
-
-    body {
-      margin: 0;
-      font-family: "Inter", sans-serif;
-      color: var(--black);
-      background: var(--cream);
-      line-height: 1.7;
-    }
-
-    img {
-      max-width: 100%;
-      display: block;
-    }
-
-    a {
-      color: inherit;
-      text-decoration: none;
-    }
-
-    .nav {
-      position: fixed;
-      top: 0;
-      width: 100%;
-      z-index: 50;
-      background: rgba(247, 244, 239, 0.88);
-      backdrop-filter: blur(14px);
-      border-bottom: 1px solid rgba(17, 17, 17, 0.08);
-    }
-
-    .nav-inner {
-      max-width: 1180px;
-      margin: auto;
-      padding: 18px 24px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    .logo {
-      font-family: "Cormorant Garamond", serif;
-      font-size: 1.6rem;
-      font-weight: 700;
-    }
-
-    .menu {
-      display: flex;
-      gap: 24px;
-      font-size: 0.9rem;
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
-    }
-
-    .menu a:hover {
-      color: var(--gold);
-    }
-
-    .hero {
-      min-height: 100vh;
-      display: grid;
-      grid-template-columns: 1.05fr 0.95fr;
-      align-items: center;
-      max-width: 1180px;
-      margin: auto;
-      padding: 140px 24px 80px;
-      gap: 70px;
-    }
-
-    .eyebrow {
-      color: var(--gold);
-      text-transform: uppercase;
-      letter-spacing: 0.16em;
-      font-weight: 700;
-      font-size: 0.8rem;
-      margin-bottom: 18px;
-    }
-
-    h1, h2, h3 {
-      font-family: "Cormorant Garamond", serif;
-      line-height: 1.05;
-      margin: 0;
-    }
-
-    h1 {
-      font-size: clamp(4rem, 9vw, 8.5rem);
-      letter-spacing: -0.05em;
-    }
-
-    h2 {
-      font-size: clamp(2.4rem, 5vw, 4.5rem);
-      margin-bottom: 24px;
-    }
-
-    h3 {
-      font-size: 1.8rem;
-      margin-bottom: 14px;
-    }
-
-    .hero-subtitle {
-      font-size: clamp(1.15rem, 2vw, 1.55rem);
-      max-width: 620px;
-      color: #303030;
-      margin: 28px 0 34px;
-    }
-
-    .buttons {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 14px;
-    }
-
-    .btn {
-      padding: 14px 22px;
-      border-radius: 999px;
-      font-weight: 700;
-      border: 1px solid var(--black);
-      transition: 0.25s ease;
-    }
-
-    .btn.primary {
-      background: var(--black);
-      color: var(--white);
-    }
-
-    .btn:hover {
-      transform: translateY(-2px);
-      background: var(--gold);
-      border-color: var(--gold);
-      color: var(--white);
-    }
-
-    .portrait {
-      min-height: 560px;
-      border-radius: 240px 240px 20px 20px;
-      background:
-        linear-gradient(rgba(17,17,17,0.12), rgba(17,17,17,0.12)),
-        url("profile.jpg") center / cover;
-      box-shadow: 0 30px 80px rgba(17,17,17,0.18);
-    }
-
-    section {
-      padding: 100px 24px;
-    }
-
-    .container {
-      max-width: 1180px;
-      margin: auto;
-    }
-
-    .split {
-      display: grid;
-      grid-template-columns: 0.9fr 1.1fr;
-      gap: 70px;
-      align-items: start;
-    }
-
-    .lead {
-      font-size: 1.25rem;
-      color: #303030;
-    }
-
-    .section-label {
-      color: var(--gold);
-      font-size: 0.78rem;
-      text-transform: uppercase;
-      letter-spacing: 0.16em;
-      font-weight: 700;
-      margin-bottom: 16px;
-    }
-
-    .white {
-      background: var(--white);
-    }
-
-    .cards {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 22px;
-      margin-top: 44px;
-    }
-
-    .card {
-      background: var(--white);
-      border: 1px solid var(--line);
-      padding: 34px;
-      border-radius: 24px;
-      transition: 0.25s ease;
-    }
-
-    .card:hover {
-      transform: translateY(-6px);
-      box-shadow: 0 20px 60px rgba(17,17,17,0.08);
-    }
-
-    .card span {
-      color: var(--gold);
-      font-weight: 700;
-      font-size: 0.82rem;
-      text-transform: uppercase;
-      letter-spacing: 0.12em;
-    }
-
-    .timeline {
-      margin-top: 40px;
-      border-left: 1px solid var(--gold);
-      padding-left: 28px;
-      display: grid;
-      gap: 26px;
-    }
-
-    .timeline-item {
-      position: relative;
-    }
-
-    .timeline-item::before {
-      content: "";
-      width: 12px;
-      height: 12px;
-      background: var(--gold);
-      border-radius: 50%;
-      position: absolute;
-      left: -35px;
-      top: 8px;
-    }
-
-    .courses {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 24px;
-      margin-top: 40px;
-    }
-
-    .course {
-      background: var(--black);
-      color: var(--white);
-      border-radius: 26px;
-      padding: 36px;
-    }
-
-    .course small {
-      color: #c7b693;
-      text-transform: uppercase;
-      letter-spacing: 0.12em;
-      font-weight: 700;
-    }
-
-    .bio-text p {
-      margin-bottom: 22px;
-    }
-
-    .contact-box {
-      background: var(--black);
-      color: var(--white);
-      border-radius: 34px;
-      padding: 54px;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 40px;
-      align-items: center;
-    }
-
-    .contact-links {
-      display: grid;
-      gap: 12px;
-    }
-
-    .contact-links a {
-      color: #e8d7af;
-      font-weight: 700;
-    }
-
-    footer {
-      padding: 34px 24px;
-      text-align: center;
-      color: var(--gray);
-      background: var(--white);
-      font-size: 0.9rem;
-    }
-
-    @media (max-width: 850px) {
-      .menu {
-        display: none;
-      }
-
-      .hero,
-      .split,
-      .contact-box {
-        grid-template-columns: 1fr;
-      }
-
-      .hero {
-        padding-top: 120px;
-        gap: 42px;
-      }
-
-      .portrait {
-        min-height: 420px;
-      }
-
-      .cards,
-      .courses {
-        grid-template-columns: 1fr;
-      }
-
-      section {
-        padding: 72px 20px;
-      }
-
-      .contact-box {
-        padding: 34px;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
 
+<header class="site-header">
+  <a class="logo" href="#">Gustavo Long</a>
+
   <nav class="nav">
-    <div class="nav-inner">
-      <a href="#" class="logo">Gustavo Long</a>
-      <div class="menu">
-        <a href="#bio">Bio</a>
-        <a href="#specialisations">Domaines</a>
-        <a href="#cours">Cours</a>
-        <a href="#accompagnement">Accompagnement</a>
-        <a href="#contact">Contact</a>
-      </div>
-    </div>
+    <a href="#about">Bio</a>
+    <a href="#work">Domaines</a>
+    <a href="#classes">Cours</a>
+    <a href="#private">Accompagnement</a>
+    <a href="#contact">Contact</a>
   </nav>
+</header>
 
-  <header class="hero">
+<section class="hero">
+  <div class="hero-overlay"></div>
+
+  <div class="hero-content">
+    <p class="eyebrow">Montréal · Québec</p>
+    <h1>Gustavo Long</h1>
+    <p class="hero-subtitle">
+      Professeur de ballet · Chercheur en danse · Registered Benesh Notator
+    </p>
+
+    <div class="hero-buttons">
+      <a href="#classes" class="btn btn-primary">Voir les cours</a>
+      <a href="#about" class="btn btn-secondary">Lire la biographie</a>
+    </div>
+  </div>
+</section>
+
+<main>
+
+<section id="about" class="section section-white">
+  <div class="container split">
     <div>
-      <div class="eyebrow">Montréal · Québec</div>
-      <h1>Gustavo Long</h1>
-      <p class="hero-subtitle">
-        Professeur de ballet, chercheur en danse et Registered Benesh Notator.
-      </p>
-      <div class="buttons">
-        <a href="#cours" class="btn primary">Voir les cours</a>
-        <a href="#bio" class="btn">Lire la bio</a>
-      </div>
+      <p class="section-kicker">Bio</p>
+      <h2>Danse, recherche et transmission.</h2>
     </div>
 
-    <div class="portrait" aria-label="Gustavo Long"></div>
-  </header>
+    <div class="about-card">
+      <img src="profile.jpg" alt="Portrait de Gustavo Long">
+      <p>
+        Danseur, chercheur et enseignant en danse classique, Gustavo Long développe un parcours entre pratique artistique, pédagogie, notation du mouvement et recherche universitaire.
+      </p>
+      <p>
+        Son travail relie la technique de la danse classique, l’histoire de la danse, la transmission du répertoire et l’analyse du mouvement.
+      </p>
+    </div>
+  </div>
+</section>
 
-  <section id="bio" class="white">
-    <div class="container split">
+<section id="work" class="section">
+  <div class="container">
+    <p class="section-kicker">Domaines de travail</p>
+    <h2>Un profil entre studio, scène et université.</h2>
+
+    <div class="cards">
+      <article class="card">
+        <span>01</span>
+        <h3>Technique classique</h3>
+        <p>Enseignement du ballet, travail technique et accompagnement des danseurs.</p>
+      </article>
+
+      <article class="card">
+        <span>02</span>
+        <h3>Notation Benesh</h3>
+        <p>Notation du mouvement et transmission du répertoire chorégraphique.</p>
+      </article>
+
+      <article class="card">
+        <span>03</span>
+        <h3>Recherche en danse</h3>
+        <p>Analyse du mouvement, histoire de la danse, archives et mémoire de la scène.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section section-white">
+  <div class="container split">
+    <div>
+      <p class="section-kicker">Parcours</p>
+      <h2>Une trajectoire internationale.</h2>
+    </div>
+
+    <div class="timeline">
       <div>
-        <div class="section-label">Bio</div>
-        <h2>Danse, recherche et transmission.</h2>
+        <h3>Argentine</h3>
+        <p>Formation en danse-interprétation et composition chorégraphique.</p>
       </div>
 
-      <div class="lead">
-        <p>
-          Danseur, chercheur et enseignant en danse classique, Gustavo Long développe un parcours entre pratique artistique, pédagogie, notation du mouvement et recherche universitaire.
-        </p>
-        <p>
-          Son travail relie la technique de la danse classique, l’histoire de la danse, la transmission du répertoire et l’analyse du mouvement.
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <section id="specialisations">
-    <div class="container">
-      <div class="section-label">Domaines de spécialisation</div>
-      <h2>Un profil entre studio, scène et université.</h2>
-
-      <div class="cards">
-        <div class="card">
-          <span>01</span>
-          <h3>Technique classique</h3>
-          <p>Enseignement de la danse classique, travail technique et accompagnement des danseurs.</p>
-        </div>
-
-        <div class="card">
-          <span>02</span>
-          <h3>Didactique</h3>
-          <p>Réflexion pédagogique autour de la transmission de la danse et de ses méthodes.</p>
-        </div>
-
-        <div class="card">
-          <span>03</span>
-          <h3>Histoire de la danse</h3>
-          <p>Étude des œuvres, des pratiques chorégraphiques et des contextes historiques.</p>
-        </div>
-
-        <div class="card">
-          <span>04</span>
-          <h3>Notation Benesh</h3>
-          <p>Notation du mouvement et transmission du répertoire chorégraphique.</p>
-        </div>
-
-        <div class="card">
-          <span>05</span>
-          <h3>Analyse du mouvement</h3>
-          <p>Observation, description et compréhension fine du geste dansé.</p>
-        </div>
-
-        <div class="card">
-          <span>06</span>
-          <h3>Culture chorégraphique</h3>
-          <p>Recherche, archives, mémoire de la scène et culture du ballet.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="white">
-    <div class="container split">
       <div>
-        <div class="section-label">Parcours</div>
-        <h2>Une trajectoire internationale.</h2>
+        <h3>France</h3>
+        <p>Études en danse à l’Université Paris 8 et formation en notation Benesh au CNSMDP.</p>
       </div>
 
-      <div class="timeline">
-        <div class="timeline-item">
-          <h3>Argentine</h3>
-          <p>Formation en danse-interprétation et composition chorégraphique à l’IUNA et à l’Université du Salvador.</p>
-        </div>
-
-        <div class="timeline-item">
-          <h3>France</h3>
-          <p>Études au département danse de l’Université Paris 8 et formation en notation Benesh au CNSMDP.</p>
-        </div>
-
-        <div class="timeline-item">
-          <h3>Paris</h3>
-          <p>Formation en mémoire et archives de la scène à l’Université Sorbonne Nouvelle.</p>
-        </div>
-
-        <div class="timeline-item">
-          <h3>Québec</h3>
-          <p>Collaborations avec l’UQAM, l’ESBQ et poursuite d’un parcours académique à Montréal.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="cours">
-    <div class="container">
-      <div class="section-label">Cours ouverts au public</div>
-      <h2>Hiver 2025</h2>
-
-      <div class="courses">
-        <div class="course">
-          <small>Adultes</small>
-          <h3>Initiation à la danse</h3>
-          <p>UQAM · mercredi 16h à 17h30</p>
-          <p>Inscription : Centre sportif UQAM</p>
-        </div>
-
-        <div class="course">
-          <small>Adultes</small>
-          <h3>Ballet intermédiaire</h3>
-          <p>UQAM · mercredi 17h30 à 19h00</p>
-          <p>Inscription : Centre sportif UQAM</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="accompagnement" class="white">
-    <div class="container split">
       <div>
-        <div class="section-label">Accompagnement personnalisé</div>
-        <h2>Travail individuel et préparation.</h2>
+        <h3>Paris</h3>
+        <p>Formation en mémoire et archives de la scène à l’Université Sorbonne Nouvelle.</p>
       </div>
 
-      <div class="lead">
-        <p>Cours privé de ballet.</p>
-        <p>“Fast-track” ballet technique.</p>
-        <p>Coaching technique.</p>
-        <p>Préparation d’examens.</p>
-        <p>Préparation de concours : répertoire, création en ballet et danse contemporaine.</p>
-        <p>
-          Pour obtenir plus d’informations sur les disponibilités, tarifs et modalités en ligne ou en studio, vous pouvez me contacter.
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <section class="white">
-    <div class="container bio-text">
-      <div class="section-label">Biographie complète</div>
-      <h2>Formation et collaborations.</h2>
-
-      <p>
-        Danseur, chercheur et enseignant en danse classique, il est titulaire d’un D.E.C. en danse-interprétation ainsi que d’un baccalauréat en composition chorégraphique de l’Institut Universitaire National de l’Art en Argentine.
-      </p>
-
-      <p>
-        Il est également titulaire d’un baccalauréat en composition chorégraphique de l’Université du Salvador en Argentine.
-      </p>
-
-      <p>
-        Il poursuit ensuite son parcours académique au département danse de l’Université Paris 8, où il obtient une licence puis une maîtrise en danse, avec un mémoire intitulé « Le fantôme du chorégraphe dans deux versions du Spectre de la rose ».
-      </p>
-
-      <p>
-        En 2020, il complète un diplôme de premier cycle en notation du mouvement Benesh au Conservatoire National Supérieur de Musique et de Danse de Paris. Entre 2020 et 2022, il suit également une formation en mémoire et archives de la scène à l’Université Sorbonne Nouvelle.
-      </p>
-
-      <p>
-        En 2021, il reçoit la dispense du Diplôme d’État de professeur de danse, reconnaissance officielle de son expérience confirmée dans l’enseignement de la danse classique, délivrée par le Ministère de la Culture de France.
-      </p>
-
-      <p>
-        Il collabore avec de nombreuses institutions : l’Université Nationale des Arts en Argentine, les conservatoires de la Ville de Paris, le Conservatoire Gabriel Fauré, le Centre National de la Danse, l’Opéra National de Paris, ainsi que l’UQAM et l’ESBQ au Québec, entre autres.
-      </p>
-
-      <p>
-        Actuellement, il poursuit ses études à l’UQAM. Il est aussi Registered Benesh Notator auprès de Benesh International et membre professionnel du Regroupement québécois de la danse.
-      </p>
-    </div>
-  </section>
-
-  <section id="contact">
-    <div class="container contact-box">
       <div>
-        <div class="section-label">Contact</div>
-        <h2>Entrer en contact.</h2>
-        <p>
-          Pour les cours, accompagnements, projets de recherche ou collaborations professionnelles.
-        </p>
-      </div>
-
-      <div class="contact-links">
-        <a href="mailto:contact@gustavolong.com">contact@gustavolong.com</a>
-        <a href="https://www.instagram.com/" target="_blank">Instagram</a>
-        <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a>
-        <a href="https://paris8.academia.edu/" target="_blank">Academia</a>
+        <h3>Québec</h3>
+        <p>Collaborations avec l’UQAM, l’ESBQ et poursuite d’un parcours académique à Montréal.</p>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <footer>
-    © 2026 Gustavo Long. Tous droits réservés.
-  </footer>
+<section id="classes" class="section dark">
+  <div class="container">
+    <p class="section-kicker">Cours ouverts au public</p>
+    <h2>Hiver 2025</h2>
+
+    <div class="class-grid">
+      <article class="class-card">
+        <p class="tag">Adultes</p>
+        <h3>Initiation à la danse</h3>
+        <p>UQAM · mercredi 16h à 17h30</p>
+        <p>Inscription : Centre sportif UQAM</p>
+      </article>
+
+      <article class="class-card">
+        <p class="tag">Adultes</p>
+        <h3>Ballet intermédiaire</h3>
+        <p>UQAM · mercredi 17h30 à 19h00</p>
+        <p>Inscription : Centre sportif UQAM</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="private" class="section section-white">
+  <div class="container split">
+    <div>
+      <p class="section-kicker">Accompagnement personnalisé</p>
+      <h2>Travail individuel et préparation.</h2>
+    </div>
+
+    <div class="text-block">
+      <p>Cours privé de ballet.</p>
+      <p>“Fast-track” ballet technique.</p>
+      <p>Coaching technique.</p>
+      <p>Préparation d’examens.</p>
+      <p>Préparation de concours : répertoire, création en ballet et danse contemporaine.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container bio-long">
+    <p class="section-kicker">Biographie complète</p>
+    <h2>Formation et collaborations.</h2>
+
+    <p>
+      Danseur, chercheur et enseignant en danse classique, Gustavo Long est titulaire d’un D.E.C. en danse-interprétation ainsi que d’un baccalauréat en composition chorégraphique de l’Institut Universitaire National de l’Art en Argentine.
+    </p>
+
+    <p>
+      Il poursuit ensuite son parcours académique au département danse de l’Université Paris 8, où il obtient une licence puis une maîtrise en danse.
+    </p>
+
+    <p>
+      En 2020, il complète un diplôme de premier cycle en notation du mouvement Benesh au Conservatoire National Supérieur de Musique et de Danse de Paris.
+    </p>
+
+    <p>
+      Il collabore avec plusieurs institutions, notamment l’Université Nationale des Arts en Argentine, les conservatoires de la Ville de Paris, le Centre National de la Danse, l’Opéra National de Paris, l’UQAM et l’ESBQ.
+    </p>
+
+    <p>
+      Actuellement, il poursuit ses études à l’UQAM. Il est Registered Benesh Notator auprès de Benesh International et membre professionnel du Regroupement québécois de la danse.
+    </p>
+  </div>
+</section>
+
+<section id="contact" class="section contact-section">
+  <div class="container contact-box">
+    <div>
+      <p class="section-kicker">Contact</p>
+      <h2>Entrer en contact.</h2>
+      <p>
+        Pour les cours, accompagnements, projets de recherche ou collaborations professionnelles.
+      </p>
+    </div>
+
+    <div class="contact-links">
+      <a href="mailto:contact@gustavolong.com">contact@gustavolong.com</a>
+      <a href="https://www.instagram.com/" target="_blank">Instagram</a>
+      <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <p>© 2026 Gustavo Long. Tous droits réservés.</p>
+</footer>
 
 </body>
 </html>
