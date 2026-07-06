@@ -470,3 +470,122 @@ footer {
     padding: 30px;
   }
 }
+/* REFINED BIO DESIGN */
+
+.bio-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(280px, 0.65fr);
+  gap: 56px;
+  align-items: start;
+}
+
+.bio-copy {
+  max-width: 780px;
+}
+
+.bio-copy h2 {
+  font-size: clamp(2.15rem, 4vw, 3.6rem);
+  margin-bottom: 30px;
+}
+
+.bio-copy p {
+  font-size: 1rem;
+  line-height: 1.78;
+  color: #303030;
+  margin: 0 0 18px;
+}
+
+.bio-copy em {
+  color: #111;
+}
+
+.bio-copy a {
+  color: var(--gold);
+  font-weight: 700;
+  border-bottom: 1px solid rgba(168, 135, 78, 0.35);
+}
+
+.bio-side {
+  position: sticky;
+  top: 110px;
+}
+
+.bio-side img {
+  width: 100%;
+  max-height: 520px;
+  object-fit: cover;
+  object-position: center top;
+  border-radius: 28px;
+  box-shadow: 0 22px 60px rgba(17, 17, 17, 0.10);
+}
+
+.bio-badges {
+  margin-top: 22px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.bio-badges span {
+  padding: 9px 13px;
+  border-radius: 999px;
+  background: #f6f1e9;
+  border: 1px solid rgba(168, 135, 78, 0.25);
+  color: #3a3a3a;
+  font-size: 0.82rem;
+  font-weight: 700;
+}
+
+/* SOBER SIZE ADJUSTMENTS */
+
+.section {
+  padding: 92px 40px;
+}
+
+h1 {
+  font-size: clamp(4rem, 10vw, 8.4rem);
+}
+
+h2 {
+  font-size: clamp(2.25rem, 5vw, 4.2rem);
+}
+
+h3 {
+  font-size: 1.75rem;
+}
+
+.hero-subtitle {
+  font-size: clamp(1.1rem, 2vw, 1.45rem);
+}
+
+.card {
+  padding: 32px;
+}
+
+.class-card {
+  padding: 34px;
+}
+
+@media (max-width: 900px) {
+  .bio-layout {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+
+  .bio-side {
+    position: relative;
+    top: auto;
+  }
+
+  .bio-side img {
+    max-height: none;
+  }
+
+  .section {
+    padding: 72px 22px;
+  }
+
+  .bio-copy p {
+    font-size: 0.98rem;
+  }
+}
