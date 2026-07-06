@@ -383,93 +383,7 @@ footer {
     font-size: clamp(4rem, 18vw, 6rem);
   }
 }
-/* ABOUT + FORMATION CARD */
 
-.about-grid {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(360px, 0.85fr);
-  gap: 58px;
-  align-items: start;
-}
-
-.about-left p {
-  max-width: 620px;
-  font-size: 1.12rem;
-  color: #303030;
-  margin-bottom: 22px;
-}
-
-.about-left img {
-  width: 100%;
-  max-width: 620px;
-  height: 520px;
-  object-fit: cover;
-  object-position: center top;
-  margin-top: 34px;
-  border-radius: 30px;
-  box-shadow: 0 24px 70px rgba(17, 17, 17, 0.10);
-}
-
-.formation-card {
-  background: #fbf8f2;
-  border: 1px solid rgba(168, 135, 78, 0.28);
-  border-radius: 34px;
-  padding: 38px;
-  box-shadow: 0 24px 80px rgba(17, 17, 17, 0.08);
-}
-
-.formation-card h3 {
-  font-size: 2rem;
-  margin-bottom: 32px;
-}
-
-.country h4 {
-  margin: 0 0 20px;
-  color: var(--gold);
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  font-size: 0.86rem;
-  font-weight: 800;
-}
-
-.country p {
-  margin: 0 0 20px;
-  padding-left: 18px;
-  border-left: 2px solid rgba(168, 135, 78, 0.22);
-  font-size: 0.98rem;
-  line-height: 1.55;
-  color: #3a3a3a;
-}
-
-.country strong {
-  display: block;
-  color: #111;
-  font-weight: 800;
-  margin-bottom: 4px;
-}
-
-.formation-card hr {
-  margin: 32px 0;
-  border: none;
-  height: 1px;
-  background: rgba(168, 135, 78, 0.25);
-}
-
-@media (max-width: 900px) {
-  .about-grid {
-    grid-template-columns: 1fr;
-    gap: 38px;
-  }
-
-  .about-left img {
-    max-width: 100%;
-    height: auto;
-  }
-
-  .formation-card {
-    padding: 30px;
-  }
-}
 /* REFINED BIO DESIGN */
 
 .bio-layout {
@@ -518,18 +432,24 @@ footer {
 }
 
 .bio-badges {
-  margin-top: 22px;
+  width: 100%;
+  margin-top: 18px;
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
 }
 
-.bio-badges{
-    width:100%;
-    margin-top:18px;
-    display:flex;
-    flex-wrap:wrap;
-    gap:10px;
+.bio-badges span {
+  display: inline-flex;
+  align-items: center;
+  padding: 9px 13px;
+  border-radius: 999px;
+  background: #f6f1e9;
+  border: 1px solid rgba(168, 135, 78, 0.28);
+  color: #3a3a3a;
+  font-size: 0.78rem;
+  font-weight: 700;
+  line-height: 1.2;
 }
 
 /* SOBER SIZE ADJUSTMENTS */
