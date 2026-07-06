@@ -387,16 +387,13 @@ footer {
 
 .about-grid {
   display: grid;
-  grid-template-columns: 1fr 0.9fr;
-  gap: 64px;
+  grid-template-columns: minmax(0, 1fr) minmax(360px, 0.85fr);
+  gap: 58px;
   align-items: start;
 }
 
-.about-left {
-  max-width: 640px;
-}
-
 .about-left p {
+  max-width: 620px;
   font-size: 1.12rem;
   color: #303030;
   margin-bottom: 22px;
@@ -404,10 +401,11 @@ footer {
 
 .about-left img {
   width: 100%;
-  max-height: 520px;
+  max-width: 620px;
+  height: 520px;
   object-fit: cover;
   object-position: center top;
-  margin-top: 36px;
+  margin-top: 34px;
   border-radius: 30px;
   box-shadow: 0 24px 70px rgba(17, 17, 17, 0.10);
 }
@@ -416,24 +414,17 @@ footer {
   background: #fbf8f2;
   border: 1px solid rgba(168, 135, 78, 0.28);
   border-radius: 34px;
-  padding: 42px;
+  padding: 38px;
   box-shadow: 0 24px 80px rgba(17, 17, 17, 0.08);
-  position: sticky;
-  top: 120px;
 }
 
 .formation-card h3 {
-  font-size: 2.1rem;
-  margin-bottom: 34px;
-  color: var(--black);
-}
-
-.country {
-  position: relative;
+  font-size: 2rem;
+  margin-bottom: 32px;
 }
 
 .country h4 {
-  margin: 0 0 22px;
+  margin: 0 0 20px;
   color: var(--gold);
   letter-spacing: 0.12em;
   text-transform: uppercase;
@@ -442,8 +433,8 @@ footer {
 }
 
 .country p {
-  margin: 0 0 22px;
-  padding-left: 20px;
+  margin: 0 0 20px;
+  padding-left: 18px;
   border-left: 2px solid rgba(168, 135, 78, 0.22);
   font-size: 0.98rem;
   line-height: 1.55;
@@ -458,7 +449,7 @@ footer {
 }
 
 .formation-card hr {
-  margin: 34px 0;
+  margin: 32px 0;
   border: none;
   height: 1px;
   background: rgba(168, 135, 78, 0.25);
@@ -467,16 +458,15 @@ footer {
 @media (max-width: 900px) {
   .about-grid {
     grid-template-columns: 1fr;
-    gap: 40px;
-  }
-
-  .formation-card {
-    position: relative;
-    top: auto;
-    padding: 30px;
+    gap: 38px;
   }
 
   .about-left img {
-    max-height: none;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .formation-card {
+    padding: 30px;
   }
 }
