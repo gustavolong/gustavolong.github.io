@@ -431,25 +431,31 @@ footer {
     border-radius:28px;
 }
 
-.bio-badges {
-  width: 100%;
-  margin-top: 18px;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
+.bio-badges{
+    width:100%;
+    margin-top:18px;
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
 }
 
-.bio-badges span {
-  display: inline-flex;
-  align-items: center;
-  padding: 9px 13px;
-  border-radius: 999px;
-  background: #f6f1e9;
-  border: 1px solid rgba(168, 135, 78, 0.28);
-  color: #3a3a3a;
-  font-size: 0.78rem;
-  font-weight: 700;
-  line-height: 1.2;
+.bio-badges span{
+    display:inline-block;
+    padding:8px 14px;
+    background:#f7f2e8;
+    border:1px solid #d8c8a8;
+    border-radius:999px;
+    font-size:.78rem;
+    font-weight:600;
+    color:#444;
+    white-space:nowrap;
+    transition:.2s;
+}
+
+.bio-badges span:hover{
+    background:#a8874e;
+    border-color:#a8874e;
+    color:#fff;
 }
 
 /* SOBER SIZE ADJUSTMENTS */
