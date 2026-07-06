@@ -383,3 +383,124 @@ footer {
     font-size: clamp(4rem, 18vw, 6rem);
   }
 }
+/* ABOUT */
+
+.about-grid{
+
+display:grid;
+
+grid-template-columns:1.1fr 0.9fr;
+
+gap:60px;
+
+align-items:start;
+
+}
+
+.about-left img{
+
+margin-top:35px;
+
+border-radius:28px;
+
+box-shadow:0 25px 70px rgba(0,0,0,.08);
+
+}
+
+.about-left p{
+
+font-size:1.08rem;
+
+color:#444;
+
+}
+
+.formation-card{
+
+background:#fff;
+
+border-radius:28px;
+
+padding:40px;
+
+border:1px solid rgba(0,0,0,.08);
+
+box-shadow:0 20px 60px rgba(0,0,0,.06);
+
+position:sticky;
+
+top:120px;
+
+}
+
+.formation-card h3{
+
+margin-bottom:30px;
+
+font-size:2rem;
+
+}
+
+.country h4{
+
+margin-bottom:20px;
+
+color:#a8874e;
+
+letter-spacing:.08em;
+
+text-transform:uppercase;
+
+font-size:.9rem;
+
+}
+
+.country p{
+
+margin-bottom:18px;
+
+font-size:1rem;
+
+line-height:1.5;
+
+}
+
+.country strong{
+
+display:block;
+
+font-weight:700;
+
+margin-bottom:4px;
+
+}
+
+.formation-card hr{
+
+margin:35px 0;
+
+border:none;
+
+height:1px;
+
+background:#ece6dc;
+
+}
+
+@media(max-width:900px){
+
+.about-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.formation-card{
+
+position:relative;
+
+top:auto;
+
+}
+
+}
