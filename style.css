@@ -589,3 +589,43 @@ h3 {
     font-size: 0.98rem;
   }
 }
+.services-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:20px;
+}
+
+.service-card{
+    padding:28px;
+    border:1px solid rgba(17,17,17,.08);
+    border-radius:22px;
+    background:#faf8f4;
+    transition:.25s;
+}
+
+.service-card:hover{
+    transform:translateY(-3px);
+    box-shadow:0 18px 45px rgba(0,0,0,.06);
+}
+
+.service-card h3{
+    font-size:1.3rem;
+    margin-bottom:10px;
+}
+
+.service-card p{
+    margin:0;
+    color:#555;
+    font-size:.96rem;
+    line-height:1.7;
+}
+
+@media(max-width:900px){
+
+.services-grid{
+
+grid-template-columns:1fr;
+
+}
+
+}
