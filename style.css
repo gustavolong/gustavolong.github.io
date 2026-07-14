@@ -747,3 +747,11 @@ footer {
     white-space: normal;
   }
 }
+.bio-copy p {
+  text-align: justify !important;
+  letter-spacing: 0.05em !important;
+  word-spacing: 0.25em !important;
+  line-height: 2.2 !important;
+  font-size: 1.15rem !important;
+  color: red !important;
+}
