@@ -4,298 +4,294 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Gustavo Long | Professeur de ballet classique à Montréal</title>
-  <meta name="description" content="Gustavo Long est professeur de ballet classique à Montréal, chercheur en danse et Registered Benesh Notator. Cours de ballet, accompagnement personnalisé, recherche et projets artistiques.">
+  <title>Gustavo Long | Danse, enseignement et recherche</title>
+  <meta name="description" content="Gustavo Long est danseur, enseignant et chercheur en danse basé à Montréal.">
   <meta name="robots" content="index, follow">
   <meta name="author" content="Gustavo Long">
-
   <link rel="canonical" href="https://gustavolong.com/">
 
-  <meta property="og:title" content="Gustavo Long | Professeur de ballet classique à Montréal">
-  <meta property="og:description" content="Professeur de ballet classique, chercheur en danse et Registered Benesh Notator basé à Montréal.">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://gustavolong.com/">
-  <meta property="og:image" content="https://gustavolong.com/profile.jpg">
-
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Gustavo Long | Professeur de ballet classique à Montréal">
-  <meta name="twitter:description" content="Professeur de ballet classique, chercheur en danse et Registered Benesh Notator.">
-  <meta name="twitter:image" content="https://gustavolong.com/profile.jpg">
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css?v=20260714-2">
-
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Gustavo Long",
-    "url": "https://gustavolong.com/",
-    "image": "https://gustavolong.com/profile.jpg",
-    "jobTitle": "Professeur de ballet classique, chercheur en danse et Registered Benesh Notator",
-    "description": "Professeur de ballet classique, chercheur en danse et Registered Benesh Notator basé à Montréal.",
-    "address": {
-      "@type": "PostalAddress",
-      "postalCode": "H3X 2S3",
-      "addressLocality": "Montréal",
-      "addressRegion": "Québec",
-      "addressCountry": "CA"
-    },
-    "knowsAbout": [
-      "Classical Ballet",
-      "Dance Research",
-      "Benesh Movement Notation",
-      "Dance History",
-      "Somatic Education",
-      "Dance Pedagogy",
-      "Movement Analysis"
-    ],
-    "sameAs": [
-      "https://www.linkedin.com/in/gustavolong",
-      "https://www.instagram.com/gustavolong",
-      "https://orcid.org/0009-0001-8345-9217",
-      "https://github.com/gustavolong"
-    ],
-    "worksFor": {
-      "@type": "CollegeOrUniversity",
-      "name": "Université du Québec à Montréal"
+  <style>
+    :root {
+      --text: #181818;
+      --muted: #666;
+      --line: #d8d8d8;
+      --max-width: 560px;
     }
-  }
-  </script>
 
-  <script src="https://cdn.counter.dev/script.js"
-          data-id="fda67007-2c7e-4d8d-8a5f-29d284019551"
-          data-utcoffset="-4"></script>
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      background: #fff;
+      color: var(--text);
+      font-family: "Times New Roman", Times, serif;
+      font-size: 15.5px;
+      line-height: 1.5;
+    }
+
+    a {
+      color: inherit;
+      text-decoration-thickness: 1px;
+      text-underline-offset: 2px;
+    }
+
+    a:hover { opacity: .72; }
+
+    .container {
+      width: calc(100% - 32px);
+      max-width: var(--max-width);
+      margin: 0 auto;
+    }
+
+    .site-header {
+      border-bottom: 1px solid var(--line);
+    }
+
+    .header-inner {
+      width: calc(100% - 32px);
+      max-width: 900px;
+      min-height: 50px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+    }
+
+    .site-name {
+      font-size: 15px;
+      text-decoration: none;
+    }
+
+    nav {
+      display: flex;
+      gap: 16px;
+    }
+
+    nav a {
+      font-size: 13px;
+      text-decoration: none;
+    }
+
+    .intro {
+      padding: 42px 0 34px;
+    }
+
+    .location {
+      margin: 0 0 7px;
+      color: var(--muted);
+      font-size: 12px;
+      letter-spacing: .04em;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 42px;
+      line-height: 1;
+      font-weight: 400;
+      letter-spacing: -.02em;
+    }
+
+    .subtitle {
+      margin: 9px 0 0;
+      color: #4f4f4f;
+      font-size: 15px;
+      line-height: 1.35;
+    }
+
+    .section,
+    .contact-section {
+      padding: 34px 0 38px;
+      border-top: 1px solid var(--line);
+    }
+
+    .section-title {
+      margin: 0 0 16px;
+      padding-bottom: 5px;
+      border-bottom: 1px solid #222;
+      font-size: 22px;
+      line-height: 1.1;
+      font-weight: 400;
+    }
+
+    .bio p,
+    .contact-intro {
+      text-align: justify;
+      text-justify: inter-word;
+      hyphens: auto;
+      -webkit-hyphens: auto;
+    }
+
+    .bio p {
+      margin: 0 0 10px;
+    }
+
+    .lead {
+      font-size: 16px;
+      line-height: 1.47;
+    }
+
+    .contact-intro {
+      margin: 0 0 15px;
+    }
+
+    .contact-form {
+      margin-top: 14px;
+      width: 100%;
+      max-width: none;
+    }
+
+    .field {
+      margin-bottom: 11px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 4px;
+      font-size: 13px;
+    }
+
+    input,
+    textarea {
+      width: 100%;
+      padding: 9px 10px;
+      border: 1px solid #bfbfbf;
+      border-radius: 0;
+      background: #fff;
+      color: var(--text);
+      font-family: "Times New Roman", Times, serif;
+      font-size: 15px;
+    }
+
+    input:focus,
+    textarea:focus {
+      outline: 1px solid #333;
+      border-color: #333;
+    }
+
+    textarea { resize: vertical; }
+
+    button {
+      border: 1px solid #222;
+      background: #fff;
+      color: #222;
+      padding: 7px 14px;
+      font-family: "Times New Roman", Times, serif;
+      font-size: 13px;
+      cursor: pointer;
+    }
+
+    button:hover { background: #f3f3f3; }
+
+    footer {
+      padding: 17px 0 24px;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    footer p { margin: 0; }
+
+    @media (max-width: 620px) {
+      :root { --max-width: 92%; }
+
+      body { font-size: 15px; }
+
+      .header-inner {
+        width: calc(100% - 24px);
+      }
+
+      .container {
+        width: calc(100% - 24px);
+      }
+
+      h1 { font-size: 36px; }
+
+      .intro { padding: 34px 0 28px; }
+
+      .section,
+      .contact-section { padding: 30px 0 34px; }
+    }
+  </style>
 </head>
+
 <body>
   <header class="site-header">
     <div class="header-inner">
-      <a class="logo" href="#top" aria-label="Retour en haut">Gustavo Long</a>
-      <nav class="nav" aria-label="Navigation principale">
-        <a href="#about">Bio</a>
-        <a href="#work">Domaines</a>
-        <a href="#classes">Cours</a>
-        <a href="#private">Accompagnement</a>
+      <a class="site-name" href="#top">Gustavo Long</a>
+      <nav aria-label="Navigation principale">
+        <a href="#biographie">Biographie</a>
         <a href="#contact">Contact</a>
       </nav>
     </div>
   </header>
 
   <main id="top">
-    <section class="hero" aria-labelledby="hero-title">
-      <div class="hero-overlay"></div>
-      <div class="hero-content container">
-        <p class="eyebrow">Montréal · Québec</p>
-        <h1 id="hero-title">Gustavo Long</h1>
-        <p class="hero-subtitle">Professeur de ballet classique</p>
-        <div class="hero-buttons">
-          <a href="#classes" class="btn btn-primary">Voir les cours</a>
-          <a href="#about" class="btn btn-secondary">Lire la biographie</a>
-        </div>
+    <section class="intro">
+      <div class="container">
+        <p class="location">Montréal · Québec</p>
+        <h1>Gustavo Long</h1>
+        <p class="subtitle">Danseur · enseignant · chercheur en danse</p>
       </div>
     </section>
 
-    <section id="about" class="section section-white">
-      <div class="container bio-layout">
-        <div class="bio-copy">
-          <p class="section-kicker">Bio</p>
-          <h2>Danse, recherche et transmission.</h2>
+    <section id="biographie" class="section">
+      <div class="container bio">
+        <h2 class="section-title">Biographie</h2>
 
-          <p class="bio-lead">Danseur, chercheur et enseignant en danse classique, Gustavo Long développe un parcours à la croisée de la pratique artistique, de la pédagogie, de la notation du mouvement et de la recherche universitaire.</p>
+        <p class="lead">
+          Danseur, chercheur et enseignant en danse classique, Gustavo Long développe un parcours à la croisée de la pratique artistique, de la pédagogie, de la notation du mouvement et de la recherche universitaire.
+        </p>
 
         <p>
-  Il est titulaire d'un D.E.C. en danse-interprétation ainsi que d'un baccalauréat (<em>Licenciado</em>) en composition chorégraphique de l'Institut Universitaire National de l'Art (IUNA), en Argentine. Son mémoire de fin d'études, <em>Le rôle du chorégraphe aujourd'hui</em>, obtient la note maximale de 10/10, décernée à l'unanimité du jury.
-</p>
-
-          <p>Il est également titulaire d’un post-baccalauréat (<em>Profesor</em>) en enseignement de l’Université du Salvador. Il poursuit ensuite son parcours au département danse de l'Université Paris 8, où il obtient une licence puis un master recherche en danse.
-
-Son mémoire de master,
-<a class="publication-link"
-   href="https://www.danse.univ-paris8.fr/diplome.php?di_id=2&sorting=ANNEE"
-   target="_blank"
-   rel="noopener noreferrer">
-   <em>Le fantôme du chorégraphe dans deux versions du Spectre de la rose</em> ↗
-</a>,
-dirigé par Christine Roquet, a obtenu la mention Très Bien (la plus haute mention) et figure parmi les mémoires de recherche publiés par le département Danse de l'Université Paris 8.
-</p>
-
-       <p>
-  En 2020, il obtient un diplôme de premier cycle en notation du mouvement Benesh au Conservatoire National Supérieur de Musique et de Danse de Paris.
-</p>
-
-<ul class="academic-details">
-  <li>Projet de notation : <em>La Belle au bois dormant</em> (Le Mariage d'Aurore, Acte III), version Rudolf Noureev.</li>
-
-  <li>Projet de transmission : <em>Napoli</em> (Acte III, Pas de Six, 2e variation homme), August Bournonville.</li>
-</ul>
+          Il est titulaire d’un D.E.C. en danse-interprétation et d’un baccalauréat (<em>Licenciado</em>) en composition chorégraphique de l’Institut Universitaire National de l’Art (IUNA), en Argentine. Son mémoire de fin d’études, <em>Le rôle du chorégraphe aujourd’hui</em>, obtient la note maximale de 10/10, décernée à l’unanimité du jury. Il est également titulaire d’un post-baccalauréat (<em>Profesor</em>) en enseignement de l’Université du Salvador. Il poursuit ensuite son parcours au département Danse de l’Université Paris 8, où il obtient une licence puis un master recherche en danse.
+        </p>
 
         <p>
-  En 2021, il obtient la
-  <a class="official-link"
-     href="https://www.culture.gouv.fr/espace-documentation/bulletin-officiel/Bulletin-officiel-n-320-novembre-2021"
-     target="_blank"
-     rel="noopener noreferrer">
-     dispense du <em>Diplôme d'État de professeur de danse</em>
-     ↗
-  </a>,
-  au titre de l’expérience confirmée en matière
-d’enseignement de la danse classique, délivré par le ministère de la culture de France
-</p>
+          Son mémoire de master, <a href="https://www.danse.univ-paris8.fr/diplome.php?di_id=2&sorting=ANNEE" target="_blank" rel="noopener noreferrer"><em>Le fantôme du chorégraphe dans deux versions du Spectre de la rose</em></a>, dirigé par Christine Roquet, obtient la mention Très Bien et figure parmi les mémoires de recherche publiés par le département Danse de l’Université Paris 8. En 2020, il obtient un diplôme de premier cycle en notation du mouvement Benesh au Conservatoire National Supérieur de Musique et de Danse de Paris. Son projet de notation porte sur <em>La Belle au bois dormant</em> (<em>Le Mariage d’Aurore</em>, acte III), dans la version de Rudolf Noureev, tandis que son projet de transmission porte sur <em>Napoli</em> d’August Bournonville (acte III, Pas de Six, 2e variation homme).
+        </p>
 
-          <p>Il collabore avec plusieurs institutions, notamment l’Université Nationale des Arts en Argentine, les conservatoires de la Ville de Paris, le Centre National de la Danse (France), l’Opéra National de Paris, l’UQAM, Les Grands Ballets Canadiens et l’École supérieure de ballet du Québec.</p>
-        </div>
-
-        <aside class="bio-side" aria-label="Portrait et domaines d’expertise">
-          <div class="portrait-frame">
-            <img src="profile.jpg" alt="Portrait de Gustavo Long">
-          </div>
-          <div class="bio-badges">
-            <span>Ballet classique</span>
-            <span>Pratiques corporelles</span>
-            <span>Éducation somatique</span>
-            <span>Recherche en danse</span>
-            <span>Notation du mouvement Benesh</span>
-            <span>Analyse du mouvement</span>
-            <span>Didactique</span>
-          </div>
-        </aside>
+        <p>
+          En 2021, il obtient la <a href="https://www.culture.gouv.fr/espace-documentation/bulletin-officiel/Bulletin-officiel-n-320-novembre-2021" target="_blank" rel="noopener noreferrer">dispense du <em>Diplôme d’État de professeur de danse</em></a>, délivrée par le ministère de la Culture de France au titre de son expérience confirmée dans l’enseignement de la danse classique. Il collabore avec plusieurs institutions, notamment l’Université Nationale des Arts en Argentine, les conservatoires de la Ville de Paris, le Centre National de la Danse, l’Opéra National de Paris, l’UQAM, Les Grands Ballets Canadiens et l’École supérieure de ballet du Québec. Il donne actuellement des cours de danse et de ballet ouverts au grand public au Centre sportif de l’UQAM, au CELO et aux Grands Ballets Canadiens.
+        </p>
       </div>
     </section>
 
-    <section id="work" class="section section-cream">
+    <section id="contact" class="contact-section">
       <div class="container">
-        <div class="section-heading">
-          <p class="section-kicker">Domaines de travail</p>
-          <h2>Un profil entre studio, scène et université.</h2>
-        </div>
-
-        <div class="cards">
-          <article class="card">
-            <span class="card-number">01</span>
-            <h3>Technique classique</h3>
-            <p>Enseignement du ballet, travail technique et accompagnement des danseurs.</p>
-          </article>
-
-          <article class="card">
-            <span class="card-number">02</span>
-            <h3>Notation Benesh</h3>
-            <p>Notation du mouvement et transmission du répertoire chorégraphique.</p>
-          </article>
-
-          <article class="card">
-            <span class="card-number">03</span>
-            <h3>Recherche en danse</h3>
-            <p>Analyse du mouvement, didactique, histoire de la danse, archives et mémoire de la scène.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section id="classes" class="section dark">
-      <div class="container">
-        <div class="section-heading light-heading">
-          <p class="section-kicker">Cours ouverts au public</p>
-          <h2>Automne 2026</h2>
-        </div>
-
-        <div class="class-grid">
-          <article class="class-card">
-            <p class="tag">Adultes</p>
-            <h3>Initiation à la danse</h3>
-            <p class="class-meta">UQAM · mercredi 16 h à 17 h 30</p>
-            <p class="class-note">Inscription : Centre sportif UQAM</p>
-          </article>
-
-          <article class="class-card">
-            <p class="tag">Adultes</p>
-            <h3>Ballet intermédiaire</h3>
-            <p class="class-meta">UQAM · mercredi 17 h 30 à 19 h</p>
-            <p class="class-note">Inscription : Centre sportif UQAM</p>
-          </article>
-          
-           <article class="class-card">
-            <p class="tag">Adultes</p>
-            <h3>Ballet en douceur</h3>
-            <p class="class-meta">CELO, Centre Communautaire de Loisir de la Côte-des-Neiges · mardi 16 h 30 à 17 h 30</p>
-            <p class="class-note">Inscription : CELO, Centre Communautaire de Loisir de la Côte-des-Neiges</p>
-          </article>
-
-          <article class="class-card">
-            <p class="tag">Adultes</p>
-            <h3>Ballet et posture</h3>
-            <p class="class-meta">CELO, Centre Communautaire de Loisir de la Côte-des-Neiges · mardi 18 h à 19 h</p>
-            <p class="class-note">Inscription : CELO, Centre Communautaire de Loisir de la Côte-des-Neiges</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section id="private" class="section section-white">
-      <div class="container split">
-        <div class="section-heading sticky-heading">
-          <p class="section-kicker">Accompagnement personnalisé</p>
-          <h2>Travail individuel et préparation.</h2>
-          <p class="section-intro">Un accompagnement précis, progressif et adapté au parcours de chaque danseur.</p>
-        </div>
-
-        <div class="services-grid">
-          <article class="service-card">
-            <h3>Cours privés</h3>
-            <p>Accompagnement individuel en danse classique adapté aux objectifs de chaque élève.</p>
-          </article>
-
-          <article class="service-card">
-            <h3>Fast-Track Technique</h3>
-            <p>Programme intensif destiné aux danseurs souhaitant progresser rapidement.</p>
-          </article>
-
-          <article class="service-card">
-            <h3>Préparation d’examens</h3>
-            <p>Préparation technique et artistique pour les examens de danse classique.</p>
-          </article>
-
-          <article class="service-card">
-            <h3>Concours &amp; Auditions</h3>
-            <p>Répertoire classique, variations, création chorégraphique et danse contemporaine.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section id="contact" class="section contact-section">
-      <div class="container contact-box">
-        <div class="contact-copy">
-          <p class="section-kicker">Contact</p>
-          <h2>Écrire à Gustavo.</h2>
-          <p>Pour les cours, accompagnements, projets de recherche ou collaborations professionnelles.</p>
-        </div>
+        <h2 class="section-title">Contact</h2>
+        <p class="contact-intro">
+          Pour toute demande professionnelle, académique ou artistique, vous pouvez me contacter à l’aide du formulaire ci-dessous.
+        </p>
 
         <form class="contact-form" action="https://formspree.io/f/xvgrkpqr" method="POST">
-          <div class="field-group">
+          <div class="field">
             <label for="name">Nom</label>
             <input type="text" id="name" name="name" autocomplete="name" required>
           </div>
 
-          <div class="field-group">
+          <div class="field">
             <label for="email">Adresse e-mail</label>
             <input type="email" id="email" name="email" autocomplete="email" required>
           </div>
 
-          <div class="field-group">
+          <div class="field">
             <label for="message">Message</label>
             <textarea id="message" name="message" rows="6" required></textarea>
           </div>
 
-          <button type="submit">Envoyer le message</button>
+          <button type="submit">Envoyer</button>
         </form>
       </div>
     </section>
   </main>
 
   <footer>
-    <p>© 2026 Gustavo Long. Tous droits réservés.</p>
+    <div class="container">
+      <p>© 2026 Gustavo Long</p>
+    </div>
   </footer>
 </body>
 </html>
