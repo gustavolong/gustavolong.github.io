@@ -30,10 +30,15 @@
       margin: 0;
       color: var(--text);
       background-color: #fff;
-      background-image: url("Gustavo%20Long%20%281%29.jpg");
+      background-image:
+        linear-gradient(
+          rgba(255, 255, 255, .62),
+          rgba(255, 255, 255, .62)
+        ),
+        url("Gustavo%20Long%20%281%29.jpg");
       background-repeat: no-repeat;
-      background-position: -240px center;
-      background-size: 1200px auto;
+      background-position: center center;
+      background-size: cover;
       background-attachment: fixed;
       font-family: "Times New Roman", Times, serif;
       font-size: 15.5px;
@@ -208,12 +213,6 @@
 
     footer p {
       margin: 0;
-    }
-
-    @media (max-width: 1000px) {
-      body {
-        background-image: none;
-      }
     }
 
     @media (max-width: 620px) {
