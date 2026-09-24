@@ -18,9 +18,13 @@
       --max-width: 900px;
     }
 
-    * { box-sizing: border-box; }
+    * {
+      box-sizing: border-box;
+    }
 
-    html { scroll-behavior: smooth; }
+    html {
+      scroll-behavior: smooth;
+    }
 
     body {
       margin: 0;
@@ -37,7 +41,9 @@
       text-underline-offset: 2px;
     }
 
-    a:hover { opacity: .72; }
+    a:hover {
+      opacity: .72;
+    }
 
     .container {
       width: calc(100% - 32px);
@@ -51,7 +57,7 @@
 
     .header-inner {
       width: calc(100% - 32px);
-      max-width: 900px;
+      max-width: var(--max-width);
       min-height: 50px;
       margin: 0 auto;
       display: flex;
@@ -77,22 +83,6 @@
 
     .intro {
       padding: 42px 0 34px;
-    }
-
-    .intro-layout {
-      display: grid;
-      grid-template-columns: 42% minmax(0, 1fr);
-      align-items: center;
-      gap: 30px;
-    }
-
-    .intro-photo {
-      display: block;
-      width: 100%;
-      height: 230px;
-      object-fit: cover;
-      object-position: left center;
-      filter: grayscale(1);
     }
 
     .location {
@@ -130,6 +120,22 @@
       font-size: 22px;
       line-height: 1.1;
       font-weight: 400;
+    }
+
+    .bio-photo {
+      float: left;
+      width: 48%;
+      height: 330px;
+      margin: 4px 28px 16px 0;
+      object-fit: cover;
+      object-position: left center;
+      filter: grayscale(1);
+    }
+
+    .bio::after {
+      content: "";
+      display: block;
+      clear: both;
     }
 
     .bio p,
@@ -186,7 +192,9 @@
       border-color: #333;
     }
 
-    textarea { resize: vertical; }
+    textarea {
+      resize: vertical;
+    }
 
     button {
       border: 1px solid #222;
@@ -198,7 +206,9 @@
       cursor: pointer;
     }
 
-    button:hover { background: #f3f3f3; }
+    button:hover {
+      background: #f3f3f3;
+    }
 
     footer {
       padding: 17px 0 24px;
@@ -207,34 +217,38 @@
       font-size: 12px;
     }
 
-    footer p { margin: 0; }
+    footer p {
+      margin: 0;
+    }
 
     @media (max-width: 620px) {
-      body { font-size: 15px; }
+      body {
+        font-size: 15px;
+      }
 
       .header-inner,
       .container {
         width: calc(100% - 24px);
       }
 
+      h1 {
+        font-size: 36px;
+      }
+
       .intro {
-        padding: 28px 0;
+        padding: 34px 0 28px;
       }
-
-      .intro-layout {
-        grid-template-columns: 1fr;
-        gap: 20px;
-      }
-
-      .intro-photo {
-        height: auto;
-      }
-
-      h1 { font-size: 36px; }
 
       .section,
       .contact-section {
         padding: 30px 0 34px;
+      }
+
+      .bio-photo {
+        float: none;
+        width: 100%;
+        height: auto;
+        margin: 0 0 20px;
       }
     }
   </style>
@@ -244,6 +258,7 @@
   <header class="site-header">
     <div class="header-inner">
       <a class="site-name" href="#top">Gustavo Long</a>
+
       <nav aria-label="Navigation principale">
         <a href="#biographie">Biographie</a>
         <a href="#contact">Contact</a>
@@ -253,24 +268,22 @@
 
   <main id="top">
     <section class="intro">
-      <div class="container intro-layout">
-        <img
-          class="intro-photo"
-          src="Gustavo%20Long%20%281%29.jpg"
-          alt="Gustavo Long"
-        >
-
-        <div class="intro-text">
-          <p class="location">Montréal · Québec</p>
-          <h1>Gustavo Long</h1>
-          <p class="subtitle">Danseur · enseignant · chercheur en danse</p>
-        </div>
+      <div class="container">
+        <p class="location">Montréal · Québec</p>
+        <h1>Gustavo Long</h1>
+        <p class="subtitle">Danseur · enseignant · chercheur en danse</p>
       </div>
     </section>
 
     <section id="biographie" class="section">
       <div class="container bio">
         <h2 class="section-title">Biographie</h2>
+
+        <img
+          class="bio-photo"
+          src="Gustavo%20Long%20%281%29.jpg"
+          alt="Gustavo Long"
+        >
 
         <p class="lead">
           Danseur, chercheur et enseignant en danse classique, Gustavo Long développe un parcours à la croisée de la pratique artistique, de la pédagogie, de la notation du mouvement et de la recherche universitaire.
@@ -301,6 +314,7 @@
     <section id="contact" class="contact-section">
       <div class="container">
         <h2 class="section-title">Contact</h2>
+
         <p class="contact-intro">
           Pour toute demande professionnelle, académique ou artistique, vous pouvez me contacter à l’aide du formulaire ci-dessous.
         </p>
