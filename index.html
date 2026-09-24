@@ -12,9 +12,9 @@
 
   <style>
     :root {
-      --text: #181818;
-      --muted: #666;
-      --line: #d8d8d8;
+      --text: #101010;
+      --muted: #444;
+      --line: #bcbcbc;
       --max-width: 900px;
     }
 
@@ -32,11 +32,11 @@
       background: #fff;
       color: var(--text);
       font-family: "Times New Roman", Times, serif;
-      font-size: 15.5px;
-      line-height: 1.5;
+      font-size: 17px;
+      line-height: 1.55;
     }
 
-    /* Foto fija, ampliada para cubrir toda la pantalla */
+    /* Foto de la sala fija y en blanco y negro */
     body::before {
       content: "";
       position: fixed;
@@ -47,13 +47,13 @@
       pointer-events: none;
     }
 
-    /* Capa blanca para mantener legible el texto */
+    /* Capa blanca para mejorar el contraste del texto */
     body::after {
       content: "";
       position: fixed;
       inset: 0;
       z-index: -1;
-      background: rgba(255, 255, 255, .72);
+      background: rgba(255, 255, 255, .84);
       pointer-events: none;
     }
 
@@ -89,7 +89,7 @@
     }
 
     .site-name {
-      font-size: 15px;
+      font-size: 16px;
       text-decoration: none;
     }
 
@@ -99,7 +99,7 @@
     }
 
     nav a {
-      font-size: 13px;
+      font-size: 14px;
       text-decoration: none;
     }
 
@@ -110,13 +110,13 @@
     .location {
       margin: 0 0 7px;
       color: var(--muted);
-      font-size: 12px;
+      font-size: 13px;
       letter-spacing: .04em;
     }
 
     h1 {
       margin: 0;
-      font-size: 42px;
+      font-size: 44px;
       line-height: 1;
       font-weight: 400;
       letter-spacing: -.02em;
@@ -124,9 +124,9 @@
 
     .subtitle {
       margin: 9px 0 0;
-      color: #4f4f4f;
-      font-size: 15px;
-      line-height: 1.35;
+      color: #303030;
+      font-size: 16px;
+      line-height: 1.4;
     }
 
     .section,
@@ -139,7 +139,7 @@
       margin: 0 0 16px;
       padding-bottom: 5px;
       border-bottom: 1px solid #222;
-      font-size: 22px;
+      font-size: 23px;
       line-height: 1.1;
       font-weight: 400;
     }
@@ -153,12 +153,12 @@
     }
 
     .bio p {
-      margin: 0 0 10px;
+      margin: 0 0 12px;
     }
 
     .lead {
-      font-size: 16px;
-      line-height: 1.47;
+      font-size: 18px;
+      line-height: 1.5;
     }
 
     .contact-intro {
@@ -177,25 +177,25 @@
     label {
       display: block;
       margin-bottom: 4px;
-      font-size: 13px;
+      font-size: 14px;
     }
 
     input,
     textarea {
       width: 100%;
       padding: 9px 10px;
-      border: 1px solid #bfbfbf;
+      border: 1px solid #999;
       border-radius: 0;
       background: #fff;
       color: var(--text);
       font-family: "Times New Roman", Times, serif;
-      font-size: 15px;
+      font-size: 16px;
     }
 
     input:focus,
     textarea:focus {
-      outline: 1px solid #333;
-      border-color: #333;
+      outline: 1px solid #222;
+      border-color: #222;
     }
 
     textarea {
@@ -208,7 +208,7 @@
       color: #222;
       padding: 7px 14px;
       font-family: "Times New Roman", Times, serif;
-      font-size: 13px;
+      font-size: 14px;
       cursor: pointer;
     }
 
@@ -220,7 +220,7 @@
       padding: 17px 0 24px;
       border-top: 1px solid var(--line);
       color: var(--muted);
-      font-size: 12px;
+      font-size: 13px;
     }
 
     footer p {
@@ -229,7 +229,11 @@
 
     @media (max-width: 620px) {
       body {
-        font-size: 15px;
+        font-size: 16px;
+      }
+
+      body::after {
+        background: rgba(255, 255, 255, .88);
       }
 
       .header-inner,
@@ -238,7 +242,7 @@
       }
 
       h1 {
-        font-size: 36px;
+        font-size: 38px;
       }
 
       .intro {
@@ -248,10 +252,6 @@
       .section,
       .contact-section {
         padding: 30px 0 34px;
-      }
-
-      body::after {
-        background: rgba(255, 255, 255, .82);
       }
     }
   </style>
