@@ -28,21 +28,33 @@
 
     body {
       margin: 0;
+      isolation: isolate;
+      background: #fff;
       color: var(--text);
-      background-color: #fff;
-      background-image:
-        linear-gradient(
-          rgba(255, 255, 255, .62),
-          rgba(255, 255, 255, .62)
-        ),
-        url("Gustavo%20Long%20%281%29.jpg");
-      background-repeat: no-repeat;
-      background-position: center center;
-      background-size: cover;
-      background-attachment: fixed;
       font-family: "Times New Roman", Times, serif;
       font-size: 15.5px;
       line-height: 1.5;
+    }
+
+    /* Foto fija, ampliada para cubrir toda la pantalla */
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      z-index: -2;
+      background: url("fondo.jpg") center center / cover no-repeat;
+      filter: grayscale(1);
+      pointer-events: none;
+    }
+
+    /* Capa blanca para mantener legible el texto */
+    body::after {
+      content: "";
+      position: fixed;
+      inset: 0;
+      z-index: -1;
+      background: rgba(255, 255, 255, .72);
+      pointer-events: none;
     }
 
     a {
@@ -236,6 +248,10 @@
       .section,
       .contact-section {
         padding: 30px 0 34px;
+      }
+
+      body::after {
+        background: rgba(255, 255, 255, .82);
       }
     }
   </style>
