@@ -12,9 +12,10 @@
 
   <style>
     :root {
-      --text: #101010;
-      --muted: #444;
-      --line: #bcbcbc;
+      --text: #161413;
+      --muted: #5b5451;
+      --line: #c8bbb5;
+      --accent: #8f6f68;
       --max-width: 900px;
     }
 
@@ -29,7 +30,7 @@
     body {
       margin: 0;
       isolation: isolate;
-      background: #fff;
+      background: #faf4f1;
       color: var(--text);
       font-family: "Times New Roman", Times, serif;
       font-size: 17px;
@@ -42,7 +43,7 @@
       inset: 0;
       z-index: -2;
       background: url("fondo.jpg") center center / cover no-repeat;
-      filter: grayscale(1);
+      filter: grayscale(.35) sepia(.18) saturate(.95) contrast(1.05) brightness(.92);
       pointer-events: none;
     }
 
@@ -51,7 +52,7 @@
       position: fixed;
       inset: 0;
       z-index: -1;
-      background: rgba(255, 255, 255, .84);
+      background: rgba(250, 244, 241, .84);
       pointer-events: none;
     }
 
@@ -62,7 +63,8 @@
     }
 
     a:hover {
-      opacity: .72;
+      opacity: 1;
+      color: var(--accent);
     }
 
     .container {
@@ -130,7 +132,7 @@
 
     .subtitle {
       margin: 0;
-      color: #303030;
+      color: #3f3937;
       font-size: 16px;
       line-height: 1.4;
     }
@@ -148,19 +150,21 @@
       justify-content: center;
       width: 38px;
       height: 38px;
-      border: 1px solid #333;
+      border: 1px solid #514844;
       border-radius: 50%;
-      color: #111;
+      color: #211d1b;
       text-decoration: none;
     }
 
     .social-link:hover {
-      background: #fff;
+      background: rgba(143, 111, 104, .08);
+      color: var(--accent);
+      border-color: var(--accent);
       opacity: 1;
     }
 
     .social-link:focus-visible {
-      outline: 2px solid #111;
+      outline: 2px solid var(--accent);
       outline-offset: 3px;
     }
 
@@ -179,7 +183,7 @@
     .section-title {
       margin: 0 0 16px;
       padding-bottom: 5px;
-      border-bottom: 1px solid #222;
+      border-bottom: 1px solid var(--accent);
       font-size: 23px;
       line-height: 1.1;
       font-weight: 400;
@@ -225,9 +229,9 @@
     textarea {
       width: 100%;
       padding: 9px 10px;
-      border: 1px solid #999;
+      border: 1px solid #a79790;
       border-radius: 0;
-      background: #fff;
+      background: rgba(255, 255, 255, .88);
       color: var(--text);
       font-family: "Times New Roman", Times, serif;
       font-size: 16px;
@@ -235,8 +239,8 @@
 
     input:focus,
     textarea:focus {
-      outline: 1px solid #222;
-      border-color: #222;
+      outline: 1px solid var(--accent);
+      border-color: var(--accent);
     }
 
     textarea {
@@ -244,9 +248,9 @@
     }
 
     button {
-      border: 1px solid #222;
-      background: #fff;
-      color: #222;
+      border: 1px solid #514844;
+      background: rgba(255, 255, 255, .88);
+      color: #2c2725;
       padding: 7px 14px;
       font-family: "Times New Roman", Times, serif;
       font-size: 14px;
@@ -254,7 +258,9 @@
     }
 
     button:hover {
-      background: #f3f3f3;
+      background: rgba(143, 111, 104, .08);
+      border-color: var(--accent);
+      color: var(--accent);
     }
 
     footer {
@@ -284,7 +290,7 @@
       }
 
       body::after {
-        background: rgba(255, 255, 255, .88);
+        background: rgba(250, 244, 241, .88);
       }
 
       .header-inner,
@@ -306,11 +312,6 @@
       }
     }
   </style>
-
-
-
-
-    </style>
 
   <script
     src="https://cdn.counter.dev/script.js"
