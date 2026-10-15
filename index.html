@@ -318,6 +318,64 @@
 .social-links {
   display: none !important;
 }
+
+
+    /* ===== TRAVAUX ET COMMUNICATIONS ===== */
+
+.travaux-details {
+  border-bottom: 1px solid var(--line);
+}
+
+.travaux-details summary {
+  padding: 18px 0;
+  cursor: pointer;
+  font-size: 19px;
+  font-weight: 400;
+}
+
+.travaux-details summary:hover {
+  color: var(--accent);
+}
+
+.travaux-details summary:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 4px;
+}
+
+.travaux-contenu {
+  padding: 0 0 20px;
+}
+
+.travaux-contenu h3 {
+  margin: 22px 0 14px;
+  font-size: 17px;
+}
+
+.reference {
+  margin: 0 0 22px;
+}
+
+.reference p {
+  margin: 0;
+  padding-left: 24px;
+  text-indent: -24px;
+  line-height: 1.65;
+  overflow-wrap: anywhere;
+}
+
+.reference .disponibilite {
+  margin-top: 7px;
+  padding-left: 24px;
+  text-indent: 0;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+#travaux {
+  scroll-margin-top: 30px;
+}
+
+    
   </style>
 
   <script
@@ -432,6 +490,175 @@ puis un <strong>master arts, mention danse</strong>
         </p>
       </div>
     </section>
+
+<!-- ===== DÉBUT : TRAVAUX ET COMMUNICATIONS ===== -->
+
+<section id="travaux" class="section">
+  <div class="container">
+    <h2 class="section-title">
+      Publications, travaux et communications
+    </h2>
+
+    <details class="travaux-details">
+      <summary>Publications</summary>
+
+      <div class="travaux-contenu">
+        <article class="reference">
+          <p>
+            Long, G. (2013). La Danza Hoy.
+            <em>Apuntes sobre Educación, Artes y Humanidades, 3</em>(4).
+          </p>
+        </article>
+
+        <h3>Traduction</h3>
+
+        <article class="reference">
+          <p>
+            Long, G. (2016, 26 mars).
+            <em>Ritmando Danzas</em>
+            [Traduction de l’espagnol vers l’anglais,
+            « The Rhythm in Dance », 2013].
+            Rhuthmos.
+          </p>
+          <p class="disponibilite">
+            <a
+              href="https://www.rhuthmos.eu/spip.php?article1750"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Consulter sur Rhuthmos
+            </a>
+          </p>
+        </article>
+      </div>
+    </details>
+
+    <details class="travaux-details">
+      <summary>Travaux universitaires</summary>
+
+      <div class="travaux-contenu">
+        <article class="reference">
+          <p>
+            Long, G. (2019).
+            <em>Le fantôme du chorégraphe dans deux versions
+            du Spectre de la rose</em>
+            [Mémoire de master, Université Paris 8].
+          </p>
+          <p class="disponibilite">
+            <a
+              href="https://www.danse.univ-paris8.fr/diplome.php?di_id=2&amp;sorting=ANNEE"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Voir la référence sur le site du département Danse
+              de l’Université Paris 8
+            </a>
+          </p>
+        </article>
+
+        <article class="reference">
+          <p>
+            Long, G. (2017).
+            <em>Don Quichotte de la Soma : construction d’une méthode
+            d’enseignement de danse classique pour adultes</em>
+            [Rapport de terrain de licence 3 non publié].
+            Université Paris 8.
+          </p>
+          <p class="disponibilite">
+            Disponible dans la bibliothèque pédagogique des terrains
+            du département Danse, en accès réservé aux étudiant·es
+            du département.
+          </p>
+        </article>
+
+        <article class="reference">
+          <p>
+            Long, G. (2010).
+            <em>Le rôle du chorégraphe aujourd’hui</em>
+            [Projet de fin d’études,
+            Institut universitaire national des arts].
+          </p>
+          <p class="disponibilite">
+            Consultable à la bibliothèque du Département des arts
+            du mouvement de l’Universidad Nacional de las Artes
+            (UNA), Argentine.
+          </p>
+        </article>
+      </div>
+    </details>
+
+    <details class="travaux-details">
+      <summary>Communications</summary>
+
+      <div class="travaux-contenu">
+        <article class="reference">
+          <p>
+            Long, G. (2023, 13 février).
+            <em>Écrire la danse</em> [Communication].
+            Colloque « Anthropologie historique des arts nomades »,
+            coordonné par Tiziana Leucci (CEIAS) et
+            Pierre Philippe-Meden (Université de Montpellier 3),
+            Maison des Sciences de l’Homme Paris Nord,
+            Saint-Denis, France.
+          </p>
+        </article>
+
+        <article class="reference">
+          <p>
+            Long, G. (2021, 12 juin).
+            <em>Partitions chorégraphiques : sources premières et
+            auto-suffisantes d’analyse et de transmission ?</em>
+            [Communication].
+            Colloque « Pour une histoire décentrée de la danse »,
+            Biennale de la danse de Lyon, Lyon, France.
+          </p>
+        </article>
+
+        <article class="reference">
+          <p>
+            Long, G. (2021, 19 mars).
+            <em>Voix plurielles pour retours d’expériences</em>
+            [Communication].
+            Journée d’études « Rencontre entre notateurs –
+            De la partition à la scène », coordonnée par
+            Marion Bastien et Anaïs Loyer,
+            Centre national de la danse, Pantin, France.
+          </p>
+        </article>
+
+        <article class="reference">
+          <p>
+            Long, G. (2020, 9 mars).
+            <em>La notation Benesh, un outil d’analyse d’œuvre
+            et d’analyse du mouvement pour la recherche en danse
+            (l’exemple du Spectre de la rose)</em> [Communication].
+            Séminaire « Contextes spécifiques. Applications et
+            adaptations du système Benesh face aux nouveaux enjeux
+            artistiques et techniques », coordonné par
+            Fabien Monrose et Yaël Heynderickx,
+            Centre national de la danse, Pantin, France.
+          </p>
+        </article>
+
+        <article class="reference">
+          <p>
+            Long, G. (2013, 4 octobre).
+            <em>Espace et imagination : une approche par le mouvement</em>
+            [Communication].
+            Ières Journées distritales de l’éducation préscolaire :
+            « Penser l’éducation de la petite enfance à partir
+            de pratiques participatives et réflexives »,
+            Pilar, Argentine.
+          </p>
+        </article>
+      </div>
+    </details>
+  </div>
+</section>
+
+<!-- ===== FIN : TRAVAUX ET COMMUNICATIONS ===== -->
+
+    
 
     <section id="contact" class="contact-section">
       <div class="container">
